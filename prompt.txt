@@ -1,0 +1,16 @@
+网站地址：https://www.xiaohongshu.com/explore?channel_id=homefeed.fashion_v3
+
+接口地址：https://edith.xiaohongshu.com/api/sns/web/v1/homefeed
+
+逆向参数：x-s
+
+要求：使用skills与mcp定位x-s并使用本地node动态生成，通过python中的pyexecjs2或者subprocess获取动态x-s并请求接口，获取接口返回的数据
+
+执行环境：
+I
+1. node: nvm use 18
+2. python: activate spider_base
+
+须知：禁止使用一切自动化的方式完成任务，只允许纯协议的方式
+
+代码保存路径：C:\Users\poppies\Desktop\AI\小红书补环境
