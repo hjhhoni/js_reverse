@@ -1,0 +1,16 @@
+// 在之后的逆向过程中, 需要涉及到补环境的操作
+// js代码在本地执行需要通过node完成代码运行, 但是网站中js代码不是通过node执行,  而是通过浏览器执行
+// 浏览器的执行环境和node的执行环境是有区别的
+
+// 在浏览器中存在一些对象, 但是这些对象在node中不存在
+// alert(123)  // 浏览器对象, 浏览器中存在, node中不存在
+/*
+*  1.window
+*  2.document
+*  3.location
+*  4.history
+*  5.navigator
+*  6.screen
+*  7.localStorage
+*  8.EventTarget
+* */

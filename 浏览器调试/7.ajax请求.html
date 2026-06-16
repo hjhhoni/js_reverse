@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ajax请求示例</title>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <style>
+        .post {
+            border: 1px solid darkgrey;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+<button id="get-posts-btn" onclick="getPosts()">获取文章列表</button>
+<div id="postList"></div>
+<div id="error"></div>
+</body>
+<script>
+    function getPosts() {
+        $.ajax({
+            url: 'https://jsonplaceholder.typicode.com/posts',  // 请求地址
+            method: 'GET',  // 请求方法
+            dataType: 'json',  // 响应数据类型
+            async: true,  // 是否异步请求
+            data: {},  // 请求参数
+            success: function (response) {  // 请求成功之后的回调函数, 在此案例中主要将数据插入到指定标签中
+                console.log(response);
+                displayPosts(response);
+            },
+            error: function (error) {
+                console.log(error);
+                handleError(error);
+            },
+        })
+
+        function displayPosts(posts) {
+            const postList = document.getElementById('postList');
+            if (postList) {
+                postList.innerHTML = posts
+                    .slice(0, 10) // 只显示前10篇文章
+                    .map(post => `
+                        <div class="post">
+                            <h3>${post.title}</h3>
+                            <p>${post.body}</p>
+                        </div>
+                    `)
+                    .join('');
+            }
+        }
+
+        function handleError(error) {
+            const errorDiv = document.getElementById('error');
+            if (errorDiv) {
+                errorDiv.textContent = `获取数据失败：${error}`;
+            }
+        }
+    }
+</script>
+</html>
