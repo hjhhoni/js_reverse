@@ -4,3 +4,4 @@ skill更新
 *.apk
 *.pyc
 *.jadx
+*.class
