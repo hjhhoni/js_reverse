@@ -1,0 +1,1142 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>从业人员基本信息公示</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+    <link href="/favicon/sac.ico" rel="shortcut icon" type="image/x-icon">
+    <link rel="stylesheet" href="https://www.sac.net.cn/images/index0209.css">
+    <link rel="stylesheet" href="https://www.sac.net.cn/images/style.css">
+    <script src="https://www.sac.net.cn/images/jquery.min.js"></script>
+    <script src="https://www.sac.net.cn/images/jquery.SuperSlide.js"></script>
+    <script src="https://www.sac.net.cn/images/koala.js"></script>
+    <script src="https://www.sac.net.cn/images/language.js"></script>
+    <link rel="stylesheet" href="https://www.sac.net.cn/images/share_style0_24.css">
+    <style>
+        .left_nav>ul>li a span {
+            color: #333;
+        }
+
+        .left_nav>ul>li span a {
+            color: #333;
+        }
+
+        .list_content .list_tit2 img {
+            width: 28px;
+        }
+
+        .left_nav>ul>li span a {
+            padding-left: 20px;
+        }
+
+        .left_nav .child i {
+            display: inline-block;
+            background: url("https://www.sac.net.cn/images/u1054.png") no-repeat center;
+            width: 10px;
+            height: 10px;
+        }
+
+        .left_nav .child li span a {
+            color: #666;
+            padding: 0 !important;
+        }
+
+        .left_nav .child li {
+            padding-left: 35px;
+        }
+
+        .left_nav .left_nav>ul .child li {
+            height: 25px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://www.sac.net.cn/images/phone.css">
+    <script type="text/javascript" src="https://www.sac.net.cn/images/jquery.min.js"></script>
+    <script type="text/javascript" src="https://www.sac.net.cn/images/touchSlider.js"></script>
+    <script type="text/javascript" src="https://www.sac.net.cn/images/jquery.SuperSlide.js"></script>
+    <script src="https://www.sac.net.cn/images/jquery-sliding-menu.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            // $('#menu').menu();  // jquery-sliding-menu.js plugin may not be loaded properly
+            $('.menu').hide();
+        });
+    </script>
+    <style>
+        .side_menu {
+            z-index: 999
+        }
+    </style>
+    <script src="https://www.sac.net.cn/images/jqrcode.js"></script>
+    <script src="https://www.sac.net.cn/images/qrcod.js"></script>
+    <style>
+        .TRS_Editor .Custom_UnionStyle img {
+            margin: auto
+        }
+
+        .TRS_Editor img {
+            margin: auto
+        }
+
+        .top_fimg {
+            float: left;
+            width: 100%;
+            text-align: center;
+        }
+
+        .top_fole {
+            width: 83%;
+            margin: 0 auto 50px;
+            text-align: left;
+            line-height: 30px;
+            font-size: 14px;
+            color: #2850a0
+        }
+
+        .print_box a {
+            color: #333
+        }
+
+        .TRS_Editor P,
+        .TRS_Editor div,
+        .TRS_Editor span,
+        .TRS_Editor FONT {
+            line-height: 32px !important;
+            font-family: '微软雅黑', FZLTHJW, Lucida Grande, Verdana, Lucida, Arial, Helvetica, sans-serif !important;
+            font-size: inherit !important;
+        }
+
+        .TRS_Editor p img {
+            max-width: 100%
+        }
+
+        .TRS_Editor table {
+            width: 100%
+        }
+
+        .TRS_Editor table p {
+            text-indent: 0 !important;
+        }
+
+        .pdfbox {
+            display: none;
+            position: relative;
+            width: 1060px;
+            height: 600px;
+            margin: 20px 0;
+            border: 0;
+        }
+
+        .pdf .pdfbox {
+            display: block;
+        }
+
+        .pdf .contt {
+            display: none
+        }
+
+        .position_box img {
+            float: none;
+        }
+
+        .footer {
+            height: auto;
+            background: #2850a0;
+            margin-top: 0
+        }
+
+        .footer p,
+        .footer p a {
+            font-size: 14px
+        }
+
+        .bsTop {
+            width: 208px !important
+        }
+
+        *,
+        *:before,
+        *:after {
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: inherit;
+            box-sizing: inherit;
+        }
+
+        .newwx {
+            float: left;
+            width: 31px;
+            height: 30px;
+            border-radius: 50%;
+            margin-right: 10px;
+            position: relative;
+            background: url(https://www.sac.net.cn/images/share_wx.jpg);
+            cursor: pointer;
+            background-size: cover;
+            margin: 15px 10px 0 10px;
+        }
+
+        .newwx:hover #div_div {
+            display: block;
+        }
+
+        #div_div {
+            position: absolute;
+            left: 0;
+            top: -180px;
+            display: none;
+            background: #fff
+        }
+
+        #div_div canvas {
+            box-shadow: 0px 2px 8px #999;
+            padding: 10px;
+        }
+
+        .sk_share {
+            float: left;
+            margin-top: 15px
+        }
+
+        .conlist i {
+            background: none
+        }
+
+        .ops_shareLayer .ops_icons li {
+            width: 32px;
+            height: 32px;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="https://www.sac.net.cn//images/newstyles20251010.css" />
+    <script src="https://www.sac.net.cn//images/jquery.min.js"></script>
+    <script src="https://www.sac.net.cn//images/jquery.SuperSlide.js"></script>
+    <style>
+        .slideTxtBox {
+            background: none
+        }
+
+        .footer_left {
+            margin-top: 0
+        }
+
+        .slideBox .hd ul {
+            margin-right: 3px;
+        }
+
+        .con_list {
+            top: 57px
+        }
+
+        .left_nav {
+            width: 215px;
+        }
+
+        .list_content {
+            width: 970px
+        }
+    </style>
+    <style>
+        :root {
+            --border: #d6deec;
+            --header: #F2F6FD;
+            --text: #2c3e50;
+            --muted: #7a869a;
+            --accent: #3b65c3;
+            --background: #eef1f6;
+        }
+
+        body {
+            background: #ffffff;
+            font-family: "Microsoft YaHei", "PingFang SC", Arial, sans-serif;
+            color: var(--text);
+        }
+
+        .page {
+            max-width: 1200px;
+            background: #ffffff;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            box-shadow: 0 8px 28px rgba(33, 56, 110, 0.08);
+            padding: 28px 32px 40px;
+        }
+
+        .section {
+            margin-top: 28px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 20px;
+            font-weight: 700;
+            padding: 16px 0;
+            color: #2850A0;
+            background: #FFFFFF !important;
+            background: var(--header);
+            border: 1px solid var(--border);
+        }
+
+        table.data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0;
+        }
+
+        table.data-table th,
+        table.data-table td {
+            border: 1px solid var(--border);
+            padding: 10px 12px;
+            font-size: 16px;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        table.data-table th {
+            background: var(--header);
+            font-weight: 700;
+            color: #2a4070;
+        }
+
+        table.basic-table td {
+            text-align: left;
+        }
+
+        .photo-cell {
+            text-align: center;
+        }
+
+        .photo-box {
+            width: 130px;
+            height: 170px;
+            margin: 0 auto;
+            border: 1px solid var(--border);
+            background: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .photo-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .placeholder {
+            color: var(--muted);
+            font-size: 12px;
+        }
+
+        .empty {
+            padding: 18px 0;
+            text-align: center;
+            color: #2F2F30;
+            font-size: 16px;
+            background: #fff;
+            border: 1px solid var(--border);
+            border-top: none;
+        }
+
+        .note {
+            margin-top: 18px;
+            font-size: 12px;
+            color: var(--muted);
+            line-height: 1.7;
+            text-align: center;
+            background: #fdfdfd;
+            border: 1px solid var(--border);
+            padding: 12px 16px;
+        }
+
+        .subsection-title {
+            background: var(--header);
+            padding: 8px 12px;
+            border: 1px solid var(--border);
+            border-bottom: none;
+            text-align: center;
+            font-size: 18px;
+            color: #2F2F30;
+            letter-spacing: 0.34px;
+            font-weight: 600;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #e6ecfb;
+            color: var(--accent);
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 12px;
+            margin-left: 8px;
+        }
+
+        .loading {
+            text-align: center;
+            color: var(--muted);
+            margin-top: 24px;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 0 8px 32px;
+            }
+            .page {
+                padding: 18px 16px 28px;
+            }
+            table.data-table th,
+            table.data-table td {
+                font-size: 12px;
+                padding: 8px;
+            }
+        }
+
+        #watermark {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            pointer-events: none;
+        }
+
+        .page {
+            position: relative;
+        }
+    </style>
+</head>
+
+<body style="min-width: 1200px;">
+    <!-- 头部 -->
+    <style>
+        .wxbox {
+            position: relative;
+        }
+
+        .wxcot {
+            display: none;
+            position: absolute;
+            left: -60px;
+            top: 25px;
+            height: 110px;
+            width: 200px;
+            z-index: 999;
+            background-color: white;
+        }
+
+        .wxcot span {
+            float: left;
+            width: 90px;
+            height: 90px;
+            font-size: 10px
+        }
+
+        .wxcot span img {
+            width: 90px;
+            height: 90px;
+        }
+
+        .wxbox:hover .wxcot {
+            display: block;
+        }
+
+        .security_search {
+            margin: 10px 0 0 0;
+        }
+
+        .security_head_right ul li {
+            font-size: 14px;
+            color: #0b5db1;
+        }
+
+        .security_head_right ul li i {
+            background: url(https://www.sac.net.cn/images/wx.png)no-repeat left center;
+            display: block;
+            width: 18px;
+            height: 18px;
+            float: left;
+            padding: 0 2px;
+        }
+
+        .security_logo1 {
+            padding: 20px 130px 0 260px
+        }
+
+        .xxgk1 {
+            top: -70px !important;
+            z-index: 999
+        }
+
+        .xxgk1 ul li {
+            height: 34px;
+            line-height: 34px;
+        }
+
+        .security_head_right {
+            float: left;
+            margin-left: 50px;
+        }
+
+        .security_head_right ul li {
+            height: 20px
+        }
+
+        .security_head_right ul li a {
+            display: inline-block;
+            line-height: 22px
+        }
+
+        .security_search button {
+            background: url(https://www.sac.net.cn/images/search.jpg)
+        }
+
+        .nav .nLi h3 a {
+            padding: 0 16px
+        }
+
+        .nav .sub1 .nav_sub_list {
+            width: 23%
+        }
+    </style>
+
+    <script>
+        function LTrim(s) {
+            for (var i = 0; i < s.length; i++)
+                if (s.charAt(i) != ' ')
+                    return s.substring(i, s.length);
+            return "";
+        }
+
+        function RTrim(s) {
+            for (var i = s.length - 1; i >= 0; i--)
+                if (s.charAt(i) != ' ')
+                    return s.substring(0, i + 1);
+            return "";
+        }
+
+        function Trim(s) {
+            s = s.replace(/^\s+|\s+$/, "");
+            return RTrim(LTrim(s));
+        }
+
+        function adv_onsubmit() {
+            var searchword = document.AdvForm.sword.value;
+            document.AdvForm.preKeyword.value = searchword;
+            searchword = searchword.replace(/^\s+|\s+$/, "");
+            if (searchword == "" || searchword == "站内搜索关键字") {
+                alert("请输入关键词!");
+                return false;
+            }
+
+
+            searchword = searchword.replace(/^\s+|\s+$/, "");
+
+            var _kwArray = searchword.split(" ");
+            var _searchword = "";
+            for (var i = 0; i < _kwArray.length; i++) {
+                if (i == 0) {
+                    _searchword = Trim(_kwArray[0]);
+                } else if (Trim(_kwArray[i]) != "") {
+                    _searchword = _searchword + "*" + Trim(_kwArray[i]);
+                }
+            }
+            if (_searchword != "") {
+                searchword = _searchword;
+            }
+            //alert(searchword);
+            document.AdvForm.searchword.value = searchword;
+
+            return true;
+        }
+
+        function formreset() {
+            document.AdvForm.reset();
+        }
+    </script>
+    <!-- 头部 -->
+    <div class="security_head">
+        <div class="w1200">
+
+            <div class="security_logo"><a href="//www.sac.net.cn/"><img src="https://www.sac.net.cn/images/logo.png" /></a></div>
+            <div class="security_logo1"><img src="https://www.sac.net.cn/images/topx.jpg" /></div>
+            <div class="security_head_right">
+                <ul>
+                    <!--<li>中文</li>-->
+                    <!--<li><a style="color: #636563" href="https://www.sac.net.cn/en/">ENGLISH</a></li>-->
+                    <li class="wxbox"><i></i>微信
+                        <div class="wxcot">
+
+                            <span><img src="https://www.sac.net.cn/topcode/202210/W020221031360934784078.jpg" />&nbsp;中国证券业协会</span>
+
+                            <span><img src="https://www.sac.net.cn/topcode/202210/W020221031360179377017.jpg" />&nbsp;中证协培训中心</span>
+
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="security_search">
+                <form action="https://www.sac.net.cn/was5/web/search?perpage=&templet=&token=0.1655978831487.32&channelid=228163" target="_blank">
+                    <input type="hidden" name="channelid" value="228163" />
+                    <input type="text" name="searchword" placeholder="请输入您要搜索的内容" />
+                    <button type="image" title="搜索" style=" cursor: pointer;width:51px;height:42px;padding:0;border:0;float:left">
+
+              <!-- <img src="../../images/search.jpg" alt="搜索" /> -->
+           </button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+    <!-- 导航 -->
+    <div class="nav">
+        <div class="w1200 ">
+            <div class="nav_li">
+                <a href="https://www.sac.net.cn/">首页</a>
+
+            </div>
+            <div class="nav_li">
+                <a href="https://www.sac.net.cn/zlgl/">自律管理</a>
+                <div class="con_list">
+                    <div class="w1200 flex-x">
+
+                        <a href="https://www.sac.net.cn/zlgl/flfg/">法律法规</a>
+
+                        <a href="https://www.sac.net.cn/zlgl/zlgz/">自律规则</a>
+
+                        <a href="https://www.sac.net.cn/zlgl/qt/">其他</a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="nav_li">
+                <a href="https://www.sac.net.cn/fwdt/">服务大厅</a>
+                <div class="con_list">
+                    <div class="w1200 flex-x">
+                        <div class="con_list_sub">
+                            <div class="con_list_sub_title">
+                                会员服务
+                            </div>
+                            <div class="con_list_sub_wrap flex-y">
+
+                                <a href="https://www.sac.net.cn/fwdt/hyfw/hyzhywglpt/">会员综合业务管理平台</a>
+
+                                <a href="https://www.sac.net.cn/fwdt/hyfw/hyxxxt/">会员信息系统</a>
+
+                                <a href="https://www.sac.net.cn/fwdt/hyfw/sjbsxt/">数据报送系统</a>
+
+                                <a href="https://www.sac.net.cn/fwdt/hyfw/thywzl/">投行业务自律管理平台</a>
+
+                                <a href="https://www.sac.net.cn/fwdt/hyfw/wxtzzglxt/">网下投资者管理系统</a>
+
+                                <a href="https://www.sac.net.cn/fwdt/hyfw/cyryglpt/">从业人员管理平台 / 执业声誉信息库</a>
+
+                                <a href="https://www.sac.net.cn/fwdt/hyfw/zqjyjgzp/">证券经营机构招聘</a>
+
+                            </div>
+                        </div>
+                        <div class="con_list_sub">
+                            <div class="con_list_sub_title">
+                                投资者服务
+                            </div>
+                            <div class="con_list_sub_wrap flex-y">
+
+                                <a href="https://www.sac.net.cn/fwdt/tzzfw/tzzzj/">投资者之家</a>
+
+                                <a href="https://www.sac.net.cn/fwdt/tzzfw/ffzqhd/">防范非法证券活动</a>
+
+                                <a href="https://www.sac.net.cn/fwdt/tzzfw/zqjftj/">证券纠纷调解</a>
+
+                            </div>
+                        </div>
+                        <div class="con_list_sub">
+                            <div class="con_list_sub_title">
+                                考生服务
+                            </div>
+                            <div class="con_list_sub_wrap flex-y">
+
+                                <a href="https://www.sac.net.cn/fwdt/ksfw/sppjcs/">水平评价测试</a>
+
+                                <a href="https://www.sac.net.cn/fwdt/ksfw/xgzqjqh/">香港证券及期货从业员资格考试</a>
+
+                                <a href="https://www.sac.net.cn/fwdt/ksfw/zcgjtzfx/">注册国际投资分析师考试</a>
+
+                                <a href="https://www.sac.net.cn/fwdt/ksfw/zkzdy/">准考证打印</a>
+
+                                <a href="https://www.sac.net.cn/fwdt/ksfw/cjcx/">成绩查询</a>
+
+                                <a href="https://www.sac.net.cn/fwdt/ksfw/jcdg/">教材订购</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav_li">
+                <a href="javascript:;">业务培训</a>
+                <div class="con_list">
+                    <div class="w1200 flex-x">
+                        <a href="https://www.sac.net.cn/cyry/pxzx/" target="_blank">培训中心</a>
+                        <a href="https://www.sacedu.cn/#/home" target="_blank">远程培训系统</a>
+                        <a href="https://mspx.sac.net.cn/cms/" target="_blank">面授培训系统</a>
+                    </div>
+                </div>
+            </div>
+            <div class="nav_li">
+                <a href="https://www.sac.net.cn/xxgk/">信息公开</a>
+                <div class="con_list" style="padding-left: 50px;">
+                    <div class="w1200 flex-x yslless" style="width: 1300px;">
+                        <div class="con_list_sub">
+                            <div class="con_list_sub_title">
+                                公司信息
+                            </div>
+                            <div class="con_list_sub_wrap flex-y">
+
+                                <a href="https://www.sac.net.cn/xxgk/gsxx/zqgsxxgs/">证券公司信息公示</a>
+
+                                <a href="https://www.sac.net.cn/xxgk/gsxx/zqtzzxgs/">证券投资咨询公司信息公示</a>
+
+                                <a href="https://www.sac.net.cn/xxgk/gsxx/zqzxpj/">证券资信评级机构信息公示</a>
+
+                                <a href="https://www.sac.net.cn/xxgk/gsxx/zqgsfzjg/">证券公司分支机构信息查询</a>
+
+                                <a href="https://www.sac.net.cn/xxgk/gsxx/cwqqjy/">场外期权交易商名单</a>
+
+                                <a href="https://www.sac.net.cn/xxgk/gsxx/xybhhy/">信用保护合约备案查询</a>
+
+                                <a href="https://www.sac.net.cn/xxgk/gsxx/xjdxzcxx/">询价对象注册信息</a>
+
+                                <a href="https://www.sac.net.cn/xxgk/gsxx/ydyyrjba/">移动应用软件备案名单公示</a>
+
+                                <a href="https://www.sac.net.cn/xxgk/gsxx/zqhyzysy/">证券行业执业声誉信息查询</a>
+
+                            </div>
+                        </div>
+                        <div class="con_list_sub">
+                            <div class="con_list_sub_title">
+                                从业人员
+                            </div>
+                            <div class="con_list_sub_wrap flex-y">
+
+                                <a href="https://www.sac.net.cn/xxgk/cyry/xxg/">证券从业人员信息公示</a>
+
+                                <a href="https://www.sac.net.cn/xxgk/cyry/flmd/">保荐代表人分类名单</a>
+
+                                <a href="https://www.sac.net.cn/xxgk/cyry/ryxx/">债券投资交易人员信息公示</a>
+
+                                <a href="https://www.sac.net.cn/xxgk/cyry/tbcx/">境外人才从业特别程序</a>
+
+                            </div>
+                        </div>
+                        <div class="con_list_sub">
+                            <div class="con_list_sub_title">
+                                行业数据
+                            </div>
+                            <div class="con_list_sub_wrap flex-y">
+
+                                <a href="https://www.sac.net.cn/xxgk/hysj/jjsj/">证券公司经营数据</a>
+
+                                <a href="https://www.sac.net.cn/xxgk/hysj/yjpm/">证券公司业绩排名</a>
+
+                            </div>
+                        </div>
+                        <div class="con_list_sub">
+                            <div class="con_list_sub_title">
+                                协会信息
+                            </div>
+                            <div class="con_list_sub_wrap flex-y">
+
+                                <a href="https://www.sac.net.cn/xxgk/xhxx/gzdt/">协会工作动态</a>
+
+                                <a href="https://www.sac.net.cn/xxgk/xhxx/dfdt/">地方协会工作动态</a>
+
+                                <a href="https://www.sac.net.cn/xxgk/xhxx/xxgs/">协会收费信息公示</a>
+
+                                <a href="https://www.sac.net.cn/xxgk/xhxx/cggs/">协会采购公示</a>
+
+                                <a href="https://www.sac.net.cn/xxgk/xhxx/szgs/">协会财务收支信息公示</a>
+
+                                <a href="https://www.sac.net.cn/xxgk/xhxx/xhnb/">协会年报</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav_li">
+                <a href="">研究/出版物</a>
+                <div class="con_list">
+                    <div class="w1200 flex-x ysless">
+                        <a href="https://www.sac.net.cn/yjcbw/zqhyfzbg/fzbg2024/">证券业发展报告</a>
+                        <a href="https://www.sac.net.cn/yjcbw/lwj2012/gzlfzlwj2024/">证券业论文集</a>
+                        <a href="https://www.sac.net.cn/yjcbw/zqhyfwstjjbg/">证券业服务实体经济报告</a>
+                        <a href="https://www.sac.net.cn/yjcbw/yxktzyhb/2023/">优秀课题摘要汇编</a>
+                        <a href="https://report.sac.net.cn/data/cedit/login/zgxt.jsp">征稿系统</a>
+                    </div>
+                </div>
+            </div>
+            <div class="nav_li">
+                <a href="https://www.sac.net.cn/lxh/">了解协会</a>
+                <div class="con_list">
+                    <div class="w1200 flex-x ysless">
+
+                        <a href="https://www.sac.net.cn/lxh/xhjj/">协会简介</a>
+
+                        <a href="https://www.sac.net.cn/lxh/xhzc/">协会章程</a>
+
+                        <a href="https://www.sac.net.cn/lxh/jgsz/">机构设置</a>
+
+                        <a href="https://www.sac.net.cn/lxh/xhhy/">协会会员</a>
+
+                        <a href="https://www.sac.net.cn/lxh/xhgcy/">协会观察员</a>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <script>
+        // 导航
+        $('.nav .nav_li').hover(function() {
+            $(this).find('.con_list').show();
+        }, function() {
+            $(this).find('.con_list').hide();
+
+        });
+    </script>
+    <script>
+        $('.gs_search_btn').click(function() {
+            var searchword = $("input[name='searchword']").val();
+            $("input[name='searchword']").val(searchword);
+        })
+    </script>
+
+    <script>
+        $(function() {
+            if ($('#nav  .nLi h3 a').eq(4).text().trim() == "从业人员") {
+
+                $('#nav  .nLi h3 a')[0].href = "../../../";
+            }
+        })
+    </script>
+    <!-- 内容 -->
+    <div class="detail_content">
+        <div class="w1200">
+            <!-- 当前位置 -->
+            <div class="position_box">
+                <div class="position">
+                    <img src="https://www.sac.net.cn/images/u937.png" alt="" />
+                    <span>您当前的位置：</span>
+                    <a href="https://www.sac.net.cn/" target="_blank" class="CurrChnlCls">首页</a>>从业人员基本信息公示
+                </div>
+            </div>
+            <!-- 文章内容 -->
+            <div class="detail_content">
+                <div class="w1200">
+
+                    <div id="app">
+                        <div class="page">
+                            <div id="watermark" style="background-image: url(&quot;data:image/png;base64,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&quot;);"></div>
+                            <div class="section">
+                                <div class="section-title">登记基本信息</div>
+                                <table class="data-table basic-table">
+                                    <tr>
+                                        <th width="16%">姓名</th>
+                                        <td width="26%">张喜洛</td>
+                                        <th width="16%">性别</th>
+                                        <td width="26%">男</td>
+                                        <td class="photo-cell" width="16%" rowspan="4">
+                                            <div class="photo-box">
+                                                <img src="./filedownload.png" alt="照片" />
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>执业机构</th>
+                                        <td>信达证券股份有限公司</td>
+                                        <th>登记编号</th>
+                                        <td>S1500624030006</td>
+                                    </tr>
+                                    <tr>
+                                        <th>登记类别</th>
+                                        <td>证券投资咨询(投资顾问)</td>
+                                        <th>学历</th>
+                                        <td>本科</td>
+                                    </tr>
+                                    <tr>
+                                        <th>登记日期</th>
+                                        <td>2024-03-29</td>
+                                        <th></th>
+                                        <td></td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                            <div class="section">
+                                <div class="section-title">执业变更记录</div>
+                                <table class="data-table">
+                                    <thead>
+                                        <tr>
+                                            <th width="18%">登记编号</th>
+                                            <th width="16%">登记日期</th>
+                                            <th width="22%">执业机构</th>
+                                            <th width="16%">登记类别</th>
+                                            <th width="14%">登记状态</th>
+                                            <th width="14%">注销登记日期</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>S1500122020002</td>
+                                            <td>2022-02-08</td>
+                                            <td>信达证券股份有限公司</td>
+                                            <td>一般证券业务</td>
+                                            <td>机构内变更</td>
+                                            <td>2024-03-29</td>
+                                        </tr>
+                                        <tr>
+                                            <td>S1500624030006</td>
+                                            <td>2024-03-29</td>
+                                            <td>信达证券股份有限公司</td>
+                                            <td>证券投资咨询(投资顾问)</td>
+                                            <td>正常</td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="note">
+                                本公示页面未包含从业人员其他正负面执业声誉信息，如需查询，可按照《证券行业执业声誉信息管理办法》第十五条规定向协会提交查询申请
+                            </div>
+                        </div>
+                        <!-- <div class="loading" v-else>数据加载中...</div> -->
+                    </div>
+                </div>
+            </div>
+            <style>
+                .footer .footer_left p a {
+                    color: #D9D9D9
+                }
+
+                .footer_left {
+                    width: 100%;
+                    text-align: center
+                }
+            </style>
+            <!-- 底部 -->
+            <div class="footer">
+                <div class="w1200">
+                    <div class="footer_left">
+                        <p>本站支持IPV6</p>
+                        <p>版权所有 2003-<span id="foot_year"></span> 中国证券业协会　<a href="https://beian.miit.gov.cn" target="_blank">京ICP备05036061号</a> 京公网安备110102001337 45号</p>
+                        <p><a href="https://www.sac.net.cn/lxwm/" target="_blank">联系我们</a> | <a href="https://www.sac.net.cn/wzdt/" target="_blank">网站地图</a> | <a href="https://www.sac.net.cn/links/" target="_blank">相关链接</a> | <a href="https://www.sac.net.cn/flsm/"
+                                target="_blank">法律声明</a></p>
+                    </div>
+                    <div class="footer_right" style="display:none">
+                        <ul>
+                            <li>
+                                <div class="footer_right_img"><img src="https://www.sac.net.cn/images/footer1.png" /></div>
+                                <p>中国证券业协会</p>
+                            </li>
+                            <li>
+                                <div class="footer_right_img"><img src="https://www.sac.net.cn/images/footer2.png" /></div>
+                                <p>中证协培训中心</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                var time = new Date();
+                $("#foot_year").html(time.getFullYear());
+            </script>
+
+            <script>
+                function CloseWin() {
+                    //有关闭确认
+                    //if(confirm("您确定要关闭本页吗？")){
+                    window.opener = null;
+                    window.open('', '_self');
+                    window.close();
+                    //}
+                }
+                $(function() {
+                    $('.font a').click(function() {
+                        $(this).addClass('active');
+                        $(this).siblings().removeClass('active');
+                    })
+
+                });
+
+
+                function dealTag(size, zoomObj, tagName) {
+                    var tagObj = zoomObj.getElementsByTagName(tagName);
+                    if (tagObj.length == 0) {
+                        zoomObj.style.fontSize = size + 'px';
+                    } else {
+                        for (var i = 0; i < tagObj.length; i++) {
+                            tagObj[i].style.fontSize = size + 'px';
+                        }
+                    }
+                }
+
+                function doZoom(size) {
+                    var zoomObj = document.getElementById('zoom');
+                    dealTag(size, zoomObj, "p");
+                    dealTag(size, zoomObj, "div");
+                    dealTag(size, zoomObj, "font");
+                    dealTag(size, zoomObj, "span");
+                    dealTag(size, zoomObj, "td");
+                    dealTag(size, zoomObj, "strong");
+                }
+            </script>
+            <script language="JavaScript">
+                var objs = document.getElementById("source");
+                var appendix = document.getElementById("appendix");
+                var keywords = document.getElementById("keywords");
+
+                function hide(obj) {
+                    if (obj == null) return;
+                    if (obj.innerText.length < 10) {
+                        obj.style.display = "none";
+                    }
+                }
+                hide(objs);
+                hide(appendix);
+                hide(keywords);
+            </script>
+
+            <script>
+                const mockData = {};
+
+                const app = Vue.createApp({
+                    data() {
+                        return {
+                            loading: true,
+                            useMock: false,
+                            content: JSON.parse(JSON.stringify(mockData))
+                        };
+                    },
+                    methods: {
+                        display(value) {
+                            if (value === null || value === undefined || value === "") return "—";
+                            return value;
+                        },
+                        normalize(detail) {
+                            const basic = detail || {};
+                            const toUrl = (src) => {
+                                if (!src) return "";
+                                if (/^https?:/i.test(src) || /^data:/i.test(src)) return src;
+                                return `/publicity/v2/filedownload?path=${encodeURIComponent(src)}`;
+                            };
+
+                            // 解析变更记录
+                            let regHistory = [];
+                            if (basic.regHistory) {
+                                try {
+                                    regHistory = typeof basic.regHistory === 'string' ? JSON.parse(basic.regHistory) : basic.regHistory;
+                                } catch (e) {
+                                    console.warn('regHistory parse failed', e);
+                                }
+                            }
+
+                            return {
+                                basicInfo: {
+                                    name: basic.name,
+                                    gender: basic.gender,
+                                    orgName: basic.orgName || basic.orgAbbrName,
+                                    certifNo: basic.certifNo,
+                                    pracCtegName: basic.pracCtegName,
+                                    edu: basic.edu,
+                                    regDate: basic.regDate,
+                                    photoPath: toUrl(basic.photoPath)
+                                },
+                                regHistory: regHistory
+                            };
+                        },
+                        useMockData() {
+                            this.content = JSON.parse(JSON.stringify(mockData));
+                            this.useMock = true;
+                            this.loading = false;
+                        },
+                        async post(url, data) {
+                            const params = new URLSearchParams();
+                            Object.keys(data || {}).forEach(k => params.append(k, data[k]));
+                            const res = await fetch(url, {
+                                method: 'POST',
+                                headers: {
+                                    'Content-Type': 'application/x-www-form-urlencoded'
+                                },
+                                body: params,
+                                credentials: 'include'
+                            });
+                            if (!res.ok) throw new Error(`HTTP ${res.status}`);
+                            return res.json();
+                        },
+                        async loadData() {
+                            const params = new URLSearchParams(window.location.search);
+                            const uuid = params.get("uuid");
+                            if (!uuid) {
+                                this.useMockData();
+                                return;
+                            }
+                            try {
+                                // 获取详情（POST）
+                                const detailResp = await this.post('/publicity/v2/getPersonDetail', {
+                                    uuid
+                                });
+                                const detail = detailResp ? .data ? .data || detailResp ? .data || detailResp;
+                                if (!detail || (typeof detail === "object" && Object.keys(detail).length === 0)) {
+                                    this.useMockData();
+                                    return;
+                                }
+
+                                this.content = this.normalize(detail);
+                                this.loading = false;
+                            } catch (err) {
+                                console.error(err);
+                                this.useMockData();
+                            }
+                        },
+                        initWatermark() {
+                            const watermarkDiv = document.getElementById("watermark");
+                            if (!watermarkDiv) return;
+
+                            var can = document.createElement('canvas');
+                            watermarkDiv.appendChild(can);
+                            can.width = 200; //画布的宽
+                            can.height = 160; //画布的高度
+                            can.style.display = 'none';
+                            var cans = can.getContext('2d');
+                            cans.rotate(-40 * Math.PI / 180); //画布里面文字的旋转角度
+                            cans.font = "16px Microsoft JhengHei"; //画布里面文字的字体
+                            cans.fillStyle = "rgba(17, 17, 17, 0.50)"; //画布里面文字的颜色
+                            cans.textAlign = 'left'; //画布里面文字的水平位置
+                            cans.textBaseline = 'Middle'; //画布里面文字的垂直位置
+                            cans.fillText("从业人员信息公示", -30, can.height); //画布里面文字的间距比例
+                            watermarkDiv.style.backgroundImage = "url(" + can.toDataURL("image/png") + ")"; //把画布插入到body中
+                        }
+                    },
+                    mounted() {
+                        this.loadData();
+                    },
+                    watch: {
+                        loading(newVal) {
+                            // 当loading变为false时，表示数据已加载，DOM已渲染
+                            if (!newVal) {
+                                this.$nextTick(() => {
+                                    this.initWatermark();
+                                });
+                            }
+                        }
+                    }
+                });
+
+                app.mount('#app');
+            </script>
+</body>
+
+</html>
