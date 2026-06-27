@@ -19,7 +19,7 @@ from pathlib import Path
 import tkinter as tk
 from tkinter import ttk, messagebox, filedialog, scrolledtext
 
-from DrissionPage import Chromium, ChromiumPage, SessionPage
+from DrissionPage import Chromium, ChromiumPage
 
 # ==================== 配置 ====================
 BASE_DIR = Path(__file__).parent
@@ -206,7 +206,6 @@ class CrawlerEngine:
         self.on_data = on_data      # 回调: (row_dict) -> None
         self.on_done = on_done      # 回调: (total_pages, total_items, elapsed) -> None
         self._stop_flag = threading.Event()
-        self.http = SessionPage()   # 用于发 HTTP 请求获取详情，不走浏览器加速
 
     def stop(self):
         self._stop_flag.set()
@@ -255,16 +254,20 @@ class CrawlerEngine:
                         row["公告日期"] = item.ele(".brandInfo-date").text
                         row["地区"] = item.ele(".brandInfo-area").text
                         if cnt >= 5 and (gs_list[4].text).startswith("+"):
-                            # 用 SessionPage 发 HTTP 请求，不用开新标签页，大幅提速
+                            # 读取 class=biditem 的 bid 属性作为 id
                             try:
                                 bid_ele = item.ele('.biditem')
                                 bidding_id = bid_ele.attr('bid')
-                                url = f"https://www.zhiliaobiaoxun.com/content/{bidding_id}/b2"
-                                resp = self.http.get(url)
-                                companies = resp.eles(".bidCompany")[1:]
-                                row["中标公司"] = ", ".join([c.text for c in companies])
+                                url = f"https://www.zhiliaobiaoxun.com/content/{bidding_id}/b2" 
+                                # 打开新标签页打开链接
+                                page = self.browser.new_tab() 
+                                page.get(url)
+                                companies = page.eles(".bidCompany")
+                                row["中标公司"] = ", ".join([company.text for company in companies])
+                                page.close()
+                                page = self.browser.latest_tab
                             except Exception as e:
-                                self.log.warning(f"获取多个中标公司失败: {e}")
+                                self.log.warning(f"多个获取中标公司失败: {e}")
 
                                                        
                         # 写入 csv（追加）
