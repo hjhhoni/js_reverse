@@ -1,0 +1,3 @@
+<SCRIPT LANGUAGE="JavaScript">
+	parent.document.getElementById('head_loginer').innerHTML='<form class="login_form" name="form_login" method="post" action="http://www.szwriter.com/do/login.php">    <span class="word">通行证 | 帐号:</span>    <span class="input"><input type="text" name="username"></span>    <span class="word">密码:</span>    <span class="input"><input type="password" name="password"></span>    <span class="sub"><input type="submit" name="Submit" value="登录"></span>    <span class="word"><a href="http://www.szwriter.com/do/reg.php">注册</a>  | <a href="http://www.szwriter.com/do/login.php">登录</a></span>    <input type="hidden" name="step" value="2">    <input class="radio" type="hidden" name="cookietime" value="86400" ></form>  ';
+	</SCRIPT>

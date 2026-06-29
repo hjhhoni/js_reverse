@@ -1,0 +1,524 @@
+/*
+*样式初始化
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: #F0FDFC url("hehua.jpg") no-repeat fixed 0 75%;
+    font-size: 12px;
+    position: relative;
+}
+
+body #cunjie {
+    position: absolute;
+    z-index: 999;
+    right: 0;
+    top: 0;
+}
+
+table {
+    /*border-collapse: collapse; */
+    border-spacing: 0;
+}
+
+td {
+    VERTICAL-ALIGN: top;
+}
+
+fieldset,
+img {
+    border: 0;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+    font-weight: normal;
+    font-style: normal;
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+}
+
+caption,
+th {
+    text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+    font-size: 100%;
+}
+
+q:before,
+q:after {
+    content: ”;
+}
+
+abbr,
+acronym {
+    border: 0;
+}
+
+a {
+    font-size: 14px;
+}
+
+a:link {
+    color: #333333;
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #333333;
+}
+
+a:hover {
+    color: #f00;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+.wrap {
+    width: 990px;
+    margin: auto;
+}
+
+.mt10 {
+    margin-top: 10px;
+}
+
+.mb10 {
+    margin-bottom: 10px;
+}
+
+.cleardiv {
+    clear: both;
+}
+
+.FL {
+    float: left;
+}
+
+.FR {
+    float: right
+}
+
+.F14 {
+    font-size: 14px;
+}
+
+.FB {
+    font-weight: bold;
+}
+
+.normal {
+    font-style: normal;
+    font-size: 12px;
+    font-weight: normal;
+    color: #333;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.cleardiv {
+    clear: both;
+}
+
+/*******************************************网站头部************************************/
+
+/*
+*顶部信息
+*/
+
+#header_login {
+    margin: auto;
+    height: 30px;
+    line-height: 30px;
+}
+
+#header_login .login {
+    width: 60%;
+    padding-left: 10px;
+}
+
+#header_login .login span {
+    display: block;
+    float: left;
+    padding-right: 5px;
+}
+
+#header_login .login span.word em {
+    color: red;
+}
+
+#header_login .login span.word a {
+    color: blue;
+}
+
+#header_login .login span.input {
+    padding-top: 4px !important;
+    padding-top: 3px;
+}
+
+#header_login .login span.input input {
+    width: 100px;
+    border: #CCC solid 1px;
+    height: 18px;
+}
+
+#header_login .login span.sub {
+    padding: 3px 10px 0 10px;
+}
+
+#header_login .login span.sub input {
+    width: 50px;
+    text-align: center;
+}
+
+#header_login .login span.sub input {
+    width: 50px;
+    text-align: center;
+}
+
+#header_login .info {
+    width: 40%;
+    text-align: right;
+    padding-right: 10px;
+    word-spacing: 5px;
+    color: #666;
+}
+
+#header_login .info a {
+    color: blue;
+}
+
+/*
+*logo样式
+*/
+
+#hd100 {
+    width: 100%;
+    height: 150px;
+    background: #ffc url("bg_1.png") bottom repeat-x;
+}
+
+#hd100 #hd_logo {
+    width: 990px;
+    margin: auto;
+}
+
+#hd100 #hd_logo .logo {
+    margin-top: 28px;
+    margin-left: 18px;
+}
+
+/*
+*导航样式
+*/
+
+#menu {
+    width: 100%;
+    height: 32px;
+    background: #f00;
+}
+
+#menu ul {
+    margin: auto;
+    width: 990px;
+    height: 32px;
+    list-style-type: none;
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.m_li {
+    float: left;
+    width: 114px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    background: url("line_li.gif") no-repeat right;
+}
+
+.m_li a {
+    display: block;
+    width: 114px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.m_li_a {
+    float: left;
+    width: 114px;
+    line-height: 30px;
+    text-align: center;
+    font-weight: bold;
+    background: #D31616;
+    position: relative;
+    height: 30px;
+    margin-right: -2px;
+    margin-left: -2px;
+}
+
+.m_li_a a {
+    display: block;
+    width: 114px;
+    font-family: "Microsoft Yahei";
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.m_li_a a:link {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.m_li_a a:visited {
+    color: #fff;
+}
+
+.m_li_a a:hover {
+    background: #D31616;
+}
+
+.m_li_a a:active {
+    color: #f00;
+}
+
+#sdh100 {
+    width: 100%;
+    background: #ccc;
+}
+
+#sdh100 .smenu {
+    width: 990px;
+    margin: 0 auto;
+    list-style-type: none;
+    height: 32px;
+}
+
+#sdh100 .smenu .s_li {
+    line-height: 36px;
+    width: auto;
+    display: none;
+    height: 32px;
+}
+
+#sdh100 .smenu .s_li_a {
+    line-height: 36px;
+    width: auto;
+    display: block;
+    height: 32px;
+}
+
+#sdh100 .smenu .smenu a {
+    text-decoration: none;
+    font-size: 14px;
+}
+
+#sdh100 .smenu .smenu a:link {
+    color: #333;
+}
+
+#sdh100 .smenu .smenu a:visited {
+    color: #000;
+}
+
+#sdh100 .smenu .smenu a:hover {
+    color: #f00;
+}
+
+#sdh100 .smenu .smenu a:active {
+    color: #f00;
+}
+
+/*
+*头部搜索
+*/
+
+#header_search {
+    margin: 0 auto 10px auto;
+    height: 70px;
+    background: #fff;
+}
+
+#header_search td {
+    padding-left: 200px;
+    background: url("bg03.gif") 700px top no-repeat;
+    vertical-align: middle;
+}
+
+#header_search .search {
+    height: 30px;
+}
+
+#header_search .search span {
+    display: block;
+    float: left;
+    padding-right: 10px;
+}
+
+#header_search .search span.input input {
+    height: 16px;
+    width: 300px;
+}
+
+#header_search .search span.sub input {
+    width: 60px;
+    text-align: center;
+}
+
+#header_search .search span.word {
+    padding-top: 5px;
+}
+
+#header_search .search span a {
+    color: #0F42A6;
+}
+
+#header_search .moresearch a.b {
+    color: red;
+}
+
+/*
+*当前位置
+*/
+
+#nav_guide {
+    background: #fff;
+    width: 990px;
+    margin: 0 auto 10px auto;
+    border: #DDD solid 1px;
+    line-height: 25px;
+    color: #666;
+}
+
+#nav_guide a {
+    color: #666;
+}
+
+#nav_guide .t1,
+#nav_guide .t2 {
+    float: left;
+}
+
+#nav_guide .t1 {
+    padding-left: 40px;
+    padding-right: 5px;
+    border-right: #DDD solid 1px;
+    background: url(home_icon.gif) 10px 4px no-repeat;
+}
+
+#nav_guide .t2 {
+    padding-left: 10px;
+}
+
+/*
+*底部样式
+*/
+
+#copy100 {
+    width: 100%;
+    margin: auto;
+    background: #B4B4B4 url("bg_ft.jpg") top repeat-x;
+}
+
+#copy100 #copyright {
+    font-size: 14px;
+    font-family: "Microsoft Yahei";
+    clear: both;
+    width: 990px;
+    height: 100px;
+    margin: 10px auto 0 auto;
+    text-align: center;
+    padding-top: 34px;
+    line-height: 24px;
+}
+
+#copy100 #copyright p {
+    font-size: 14px;
+    font-family: "Microsoft Yahei";
+}
+
+#copyright a {
+    text-decoration: none;
+    font-size: 14px;
+    font-family: "Microsoft Yahei";
+    letter-spacing: 1px;
+}
+
+#copyright a:link {
+    color: #333;
+}
+
+#copyright a:hover {
+    color: #f00;
+}
+
+/*********************************************************************
+**********************************************************************
+AJAX在线编辑DIV容器
+这个会员看不到.只是版主管理员才可以看到.这是后台风格
+一般不必修改了.修改了会员也看不到
+**********************************************************************
+*********************************************************************/
+
+#AjaxEditTable {
+    border: 1px solid #BEDDFF;
+    background: #FFF;
+}
+
+#AjaxEditTable .head {
+    height: 21px;
+    background: #DBEAFF;
+    border-bottom: 1px solid #BEDDFF;
+    padding: 3px 5px 0 7px;
+}
+
+#AjaxEditTable .head a {
+    color: #FFF;
+}
+
+#AjaxEditTable .head span {
+    DISPLAY: block;
+    FLOAT: right;
+}
+
+#AjaxEditTable .middle {
+    background: #FFF;
+    line-height: 18px;
+    padding: 5px;
+}
+
+#AjaxEditTable .middle input,
+#AjaxEditTable .middle textarea {
+    border: 1px solid #BEDDFF;
+    background: #FFF;
+}

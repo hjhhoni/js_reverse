@@ -1,0 +1,455 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>深圳市作家协会2018年新会员名单 - 作协之窗 - 深圳作家网   </title>
+
+<link rel="stylesheet" type="text/css" href="http://www.szwriter.com/images/wr/index.css">
+<link rel="stylesheet" type="text/css" href="http://www.szwriter.com/images/wr/style.css">
+<link rel="stylesheet" type="text/css" href="http://www.szwriter.com/images/wr/cms.css">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<meta name="keywords" content="深圳市 作家协会 2018年 会员名单">
+<meta name="description" content="深圳市作家协会2018年新会员名单 经深圳市作家协会主席团审议批准，2018年发展新会员80人，现予公示（时间：2018年6月29日—2018年7月5日）深圳市作家协会 2018年6月28日 排名不分先后 谭智峰 梅光宇 王池光 邬耀仿 邬霞 杨仕焦 薛俊强 王要彪 孙善文 郭智孚 刘右峰 ..">
+</head>
+<SCRIPT LANGUAGE="JavaScript">
+//
+function killErr(){
+	return true;
+}
+window.onerror=killErr;
+</SCRIPT>
+
+<SCRIPT LANGUAGE="JavaScript" src="http://www.szwriter.com/images/wr/slid.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" src="http://www.szwriter.com/images/wr/slideshow.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" src="http://www.szwriter.com/images/wr/js_menu.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" src="http://www.szwriter.com/images/default/inc.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" src="http://www.szwriter.com/images/default/default.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" src="http://www.szwriter.com/images/default/swfobject.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" src="http://www.szwriter.com/images/default/jquery-1.2.6.min.js"></SCRIPT>
+ <!–[if IE 6]>
+    <script type="text/javascript" src="http://www.szwriter.com/images/wr/DD_belatedPNG_0.0.8a-min.js"></script> 
+    <script language="javascript" type="text/javascript">
+        DD_belatedPNG.fix(' .tag,.side, .head,.tt,#copyright,img,background'); 
+     </script>
+ <![endif]–>
+<body ondblclick="">
+<div class="bar100">
+<table width="990" border="0" cellspacing="0" cellpadding="0" id="header_login">
+  <tr>
+    <td class="login">
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+document.write('<span id="head_loginer"><img alt="内容加载中,请稍候..." src="http://www.szwriter.com/images/default/ico_loading3.gif"></span>');
+document.write('<div style="display:none;"><iframe src="http://www.szwriter.com/do/hack.php?hack=login&styletype=v7&iframeID=head_loginer" width=0 height=0></iframe></div>');
+//-->
+</SCRIPT>    	
+    </td>
+    <td class="info">
+<script language="JavaScript"> 
+<!---
+today=new Date();
+var hours = today.getHours();
+var minutes = today.getMinutes();
+var seconds = today.getSeconds();
+var timeValue = ((hours >12) ? hours -12 :hours); 
+timeValue += ((minutes < 10) ? ":0" : ":") + minutes;
+timeValue += (hours >= 12) ? " 下午 " : " 上午 ";
+function initArray(){
+this.length=initArray.arguments.length
+for(var i=0;i<this.length;i++)
+this[i+1]=initArray.arguments[i]  }
+var d=new initArray("<span>星期日</span>","<em>星期一</em>","<em>星期二</em>","<em>星期三</em>","<em>星期四</em>","<em>星期五</em>","<em>星期六</em>"); 
+document.write(today.getFullYear(),"年",today.getMonth()+1,"月",today.getDate(),"日 ",d[today.getDay()+1]," ",timeValue); 
+//-->
+</script>
+		<A onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.szwriter.com');" href="http://www.szwriter.com">设为首页</A>
+        <A href="javascript:javascript:window.external.AddFavorite('http://www.szwriter.com','深圳作家网');">加入收藏</A><script src="/js/language.js"></script>
+    </td>
+  </tr>
+</table>
+</div>
+<div id="hd100">
+  <div id="hd_logo">
+     <div class="logo l"><a href='/' target=_blank><img src='http://www.szwriter.com/upload_files/label/3_20190925120919_o98gt.png'  width='174'  height='40' border='0' /></a></div>
+	 
+  </div>
+</div>
+<div id="menu">      <!-- menu start -->
+  <ul>
+    <li id="m_1" class='m_li_a'><a href="/">首&nbsp;&nbsp;页</a></li>     
+    <li id="m_4" class='m_li' onmouseover='mover(4);' onmouseout='mout(4);'><a href="/list.php?fid=68" target="_blank">文学奖项</a></li>   
+    <li id="m_5" class='m_li' onmouseover='mover(5);' onmouseout='mout(5);'><a href="/list.php?fid=3" target="_blank">文学院馆</a></li>    
+    <li id="m_6" class='m_li' onmouseover='mover(6);' onmouseout='mout(6);'><a href="/list.php?fid=69" target="_blank">理论研讨</a></li>  
+    <li id="m_7" class='m_li' onmouseover='mover(7);' onmouseout='mout(7);'><a href="/list.php?fid=77" target="_blank">文坛纵横</a></li>    
+	<li id="m_8" class='m_li' onmouseover='mover(8);' onmouseout='mout(8);'><a href="/guestbook" target="_blank">网上留言</a></li>    
+  </ul>
+</div>
+<div id="sdh100">
+<ul class="smenu">
+   <li style="padding-left:10px;" id="s_1" class='s_li_a'>深圳作家网，用文字点亮生命！</li>
+   <li style="padding-left:80px;" id="s_2" class='s_li' onmouseover='mover(2);' onmouseout='mout(2);'>
+     <a href="/list.php?fid=67" target="_blank">协会章程</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+	 <a href="/list.php?fid=45" target="_blank">作家简介</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+	 <a href="/list.php?fid=17" target="_blank">作协之窗 </a>&nbsp;&nbsp;|&nbsp;&nbsp;
+	 <a href="/list.php?fid=1" target="_blank">专题写作</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+	 <a href="/list.php?fid=39" target="_blank">读者来信</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+	 <a href="/list.php?fid=66" target="_blank">联系我们</a></li>
+   <li style="padding-left:320px;" id="s_4" class='s_li' onmouseover='mover(4);' onmouseout='mout(4);'>
+     <a href="/list.php?fid=72" target="_blank">中国文学奖</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+	 <a href="/list.php?fid=71" target="_blank">外国文学奖</a></li>
+   <li style="padding-left:450px;" id="s_5" class='s_li' onmouseover='mover(5);' onmouseout='mout(5);'>
+     <a href="/list.php?fid=63" target="_blank">文学院</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+	 <a href="/list.php?fid=64" target="_blank">文学馆</a></li>
+   <li style="padding-left:460px;" id="s_6" class='s_li' onmouseover='mover(6);' onmouseout='mout(6);'>
+     <a href="/list.php?fid=31" target="_blank">文学评论</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+	 <a href="/list.php?fid=18" target="_blank">作品赏析</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+	 <a href="/list.php?fid=49" target="_blank">写作交流</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+	 <a href="/list.php?fid=78" target="_blank">创作座谈</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+	 <a href="/list.php?fid=70" target="_blank">文学修养</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+	 <a href="/list.php?fid=81" target="_blank">研讨专题</a></li>
+   <li style="padding-left:320px;" id="s_7" class='s_li' onmouseover='mover(7);' onmouseout='mout(7);'>
+     <a href="/list.php?fid=48" target="_blank">中国文讯</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+	 <a href="/list.php?fid=50" target="_blank">深圳文讯</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+	 <a href="/list.php?fid=52" target="_blank">作家专访</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+	 <a href="/list.php?fid=47" target="_blank">作家动态</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+	 <a href="/list.php?fid=62" target="_blank">出&nbsp;&nbsp;版</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+	 <a href="/list.php?fid=73" target="_blank">文化政策</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+	 <a href="/list.php?fid=76" target="_blank">名人逸事</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+	 <a href="/list.php?fid=79" target="_blank">外国文讯</a></li>
+   <li style="padding-left:810px;" id="s_8" class='s_li' onmouseover='mover(8);' onmouseout='mout(8);'>
+     <a href="/guestbook" target="_blank">网上留言</a></li>
+</ul>                <!-- menu end -->
+</div>
+<table width="990" border="0" cellspacing="0" cellpadding="0" id="header_search">  <!-- so suo -->
+  <tr>
+    <td><form name="form1" method="post" action="http://www.szwriter.com/do/search.php" onsubmit="return cksearch();">
+        <div class="search">
+        	<span class="input">
+            <select name="mid" id="searchselect">
+        	  <option value="">全站搜索</option>
+			  <option value="0">文章</option>
+
+ <option value="103">商品</option>
+
+        	</select>  
+            </span>  
+            <span class="input"><input id="keyword_s" type="text" name="keyword"></span>
+            <span class="sub"><input type="submit" name="Submit" value="搜一下">  
+          </span> <span class="word"><a href="http://www.szwriter.com/do/search.php" target="_blank">高级搜索</a></span>	
+        </div>
+      </form><script type="text/javascript">
+<!--
+function cksearch(){
+	if (document.getElementById("keyword_s").value=='')
+	{
+		alert('关键字不能为空!');
+		return false;
+	}
+}
+//-->
+</script>
+      <div class="moresearch"> 热门搜索: <a href="/html/48-1/1889.htm" target="_blank">习近平：坚持以人民为中心的创作导向 创作更多无愧于时代的优秀作品</a>   
+      </div>
+    </td>
+  </tr>
+</table>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0" id="nav_guide">
+  <tr> 
+    <td><div class="t1">当前位置：</div><div class="t2"><a href="http://www.szwriter.com/">首页</a>  -&gt; <a  href='list.php?fid=1' class='guide_menu'>深圳作协</a> -&gt; <a  href='list.php?fid=17' class='guide_menu'>作协之窗</a> </div></td>  
+  </tr>
+</table>
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--//目的是为了做风格方便
+document.write('<div class="wrap">');
+//-->
+</SCRIPT>
+<!--
+--><style type="text/css">
+<!--
+body {
+	background-color: #F0FDFC;
+}
+-->
+</style> 
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td style="padding-top:4px;"></td>
+  </tr>
+</table>
+<div class="MainTable MainDivTable">
+  <div class="Main"> 
+      <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" class="dragTable" id="view_article">
+        <tr> 
+          <td class="head"> 
+            <h3 class="L"></h3>
+            <span class="TAG"><a editurl='http://www.szwriter.com/do/job.php?job=bencandy&fid=17&id=2222&act=do'>TOP</a></span> 
+            <h3 class="R"></h3>
+          </td>
+        </tr>
+        <tr> 
+          <td class="middle"> 
+            <div class="main_title">深圳市作家协会2018年新会员名单</div>
+            <div class="fit_title"></div>
+            <div class="top_about"><a editurl='http://www.szwriter.com/do/job.php?job=bencandy&fid=17&id=2222&&type=&act=do'>2018-06-25 22:27:00</a> 
+              来源：<a href="" target="_blank"></a> 
+              作者： 【<a 
+            href="javascript:doZoom(18)">大</a> <a 
+            href="javascript:doZoom(14)">中</a> <a 
+            href="javascript:doZoom(12)">小</a>】 浏览：<font id="hits">9061</font>次 
+              评论：<font id="commnetsnum">0</font>条 </div>
+            <table class="content" width="100%" cellspacing="0" cellpadding="0" style='TABLE-LAYOUT: fixed;WORD-WRAP: break-word' align="center">
+              <tr> 
+                <td align="left" class="content_word" id="read_tpc"><font id="zoom" face="宋体"><span id="post1">
+                  <div style="float:left;"></div>
+                  <p align="center">深圳市作家协会2018年新会员名单</p><p>&nbsp;</p><p>&nbsp;&nbsp;&nbsp; 经深圳市作家协会主席团审议批准，2018年发展新会员80人，现予公示（时间：2018年6月29日—2018年7月5日）<br />&nbsp;</p><p align="right">&nbsp;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;深圳市作家协会<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2018年6月28日</p><p>&nbsp;&nbsp;&nbsp; 排名不分先后<br />&nbsp;<br />&nbsp;&nbsp;&nbsp; 谭智峰&nbsp; 梅光宇 王池光 邬耀仿 邬霞 杨仕焦 薛俊强 王要彪 孙善文 郭智孚 刘右峰 覃江维 蒋飞霞 肖远艳 马知行 陈兴光谭安利 肖锡川 谢彩云 赵楚侨 饶丰 李洁新 汪彦君 杨智源 陈政旭 葛桂斌 韩魏年 邹丹 龙光辉 戴逢春 余琼 黄赫男&nbsp;徐小非 潘邵明 汪腾锋 余立功 陈莉 陈玉梅 邱华乐 叶小龙 郑义林 陈金玉 陈卫华 李芳林 季显艳 聂耀文 陈冬平 汪立说 李凤玲 罗南 文志红 刘建峰 彭柏清 张捷 张强 魏兰芳 范维 邹继富 曹建明 曾德宏 曾亮玮 邓丙昌 赖佛花 李云汉 吕旭辉沈云刚 伍强华 肖千超 薛丽娜 晏烈春 杨俊伟 杨美春 张泽 王旗录 朱铁军 孙剑 周炎中 刘丹丹 秦盟征 李成事</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p></span></font></td>
+              </tr>
+            </table>
+            <!--//投票-->
+            <table width="98%" border="0" cellspacing="0" cellpadding="0" style='TABLE-LAYOUT: fixed;WORD-WRAP: break-word;' align="center">
+              <tr> 
+                <td colspan="2" align="center">
+                  
+				  
+				  
+                    
+                  
+				  
+				  
+                  
+                    
+                 
+                  <table width="99%" border="0" cellspacing="0" cellpadding="0" align="center" class="tag_username">
+                    <tr> 
+                      <td width="71%" align="left" class="Tags">Tags：<A HREF='http://www.szwriter.com/do/search.php?type=keyword&keyword=%C9%EE%DB%DA%CA%D0' target=_blank>深圳市</A> <A HREF='http://www.szwriter.com/do/search.php?type=keyword&keyword=%D7%F7%BC%D2%D0%AD%BB%E1' target=_blank>作家协会</A> <A HREF='http://www.szwriter.com/do/search.php?type=keyword&keyword=2018%C4%EA' target=_blank>2018年</A> <A HREF='http://www.szwriter.com/do/search.php?type=keyword&keyword=%BB%E1%D4%B1%C3%FB%B5%A5' target=_blank>会员名单</A></td>
+                      <td align="right" width="29%">责任编辑：<a href="http://www.szwriter.com/member/homepage.php?uid=92" target="_blank">master</a></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr> 
+                <td colspan="2" align="center" class="page" height="25"></td>
+              </tr>
+              <tr align="right"> 
+                <td colspan="2" height="25"  > 
+                  <SCRIPT LANGUAGE="JavaScript" src="http://www.szwriter.com/images/default/bencandy.js"></SCRIPT>
+                  【<a 
+            href="javascript:doZoom(18)">大</a> <a 
+            href="javascript:doZoom(14)">中</a> <a 
+            href="javascript:doZoom(12)">小</a>】【<a 
+            href="javascript:doPrint()">打印</a>】 
+                  <input type=hidden value=1 name="h1" id="h1">
+                  【<a href="javascript:ft(1)" id="Maiweb1">繁体</a>】【<a href="http://www.szwriter.com/member/post.php?job=postnew&fid=17" target=_blank>投稿</a>】【<a href="http://www.szwriter.com/do/job.php?job=collect&fid=17&id=2222">收藏</a>】 
+                  【<a href="http://www.szwriter.com/do/job.php?job=recommend&fid=17&id=2222" target=_blank>推荐</a>】【<a href="http://www.szwriter.com/do/job.php?job=report&fid=17&id=2222" target=_blank>举报</a>】【<a href="http://www.szwriter.com/do/comment.php?fid=17&id=2222" target=_blank>评论</a>】 
+                  【<a 
+            href="javascript:window.close()">关闭</a>】 【<a 
+            href="javascript:window.close()"></a><a 
+            href="#">返回顶部</a>】</td>
+              </tr>
+              <tr class="nextpage"> 
+                <td width="50%" align="left"><a href="bencandy.php?fid=17&id=2260" onclick="">上一篇</a>：<a href="bencandy.php?fid=17&id=2260" onclick="" title="第十届深圳青年文学奖评奖细则">第十届深圳青年文学奖评奖细则</a></td>
+                <td width="50%" align="right" height="25"><a href="bencandy.php?fid=17&id=2218" onclick="">下一篇</a>：<a href="bencandy.php?fid=17&id=2218" onclick="" title="第二届相聚光明·全国文学创作笔会在光明新区隆重举行">第二届相聚光明·全国文学创作笔..</a></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr> 
+          <td class="foot"> 
+            <h3 class="L"></h3>
+            <h3 class="R"></h3>
+          </td>
+        </tr>
+      </table>
+      <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" class="dragTable" id="view_article_bbs">
+        
+      </table>
+      
+    </div>
+    <div class="Side"> 
+      <table width="100%" border="0" cellspacing="0" cellpadding="0" class="dragTable" id="sonSortName">
+        <tr> 
+          <td class="head" height="19"> 
+            <h3 class="L"></h3>
+            <span class="TAG">相关栏目</span> 
+            <h3 class="R"></h3>
+          </td>
+        </tr>
+        <tr> 
+          <td class="middle" align="left"> 
+            <div style="width:100%;padding-top:5px;height:45px;background:#F9F9F9;"><!--
+-->
+            <div style="width:46%;background:url(http://www.szwriter.com/images/default/article_elite.gif) no-repeat 0.3em 0;padding-left:0.3em;text-indent:1.5em;float:left;margin-left:4px;line-height:21px;"><a style="font-weight:bold;" href="list.php?fid=18">MTV类</a></div>
+            </div> </td>
+        </tr>
+        <tr> 
+          <td class="foot"> 
+            <h3 class="L"></h3>
+            <h3 class="R"></h3>
+          </td>
+        </tr>
+      </table>
+      <table width="100%" border="0" cellspacing="0" cellpadding="0" >
+        <tr> 
+          <td style="padding-top:6px;" align="right"></td>
+        </tr>
+      </table>
+      <table width="100%" border="0" cellspacing="0" cellpadding="0" class="dragTable">
+        <tr> 
+          <td class="head"> 
+            <h3 class="L"></h3>
+            <span class="TAG">最新文章</span> 
+            <h3 class="R"></h3>
+          </td>
+        </tr>
+        <tr> 
+          <td class="middle" align="left">
+
+<div class='side_t' style='background:url(http://www.szwriter.com/images/default/flea_line.gif) repeat-x bottom;width:98%;padding-top:6px;padding-bottom:5px;'><A target='_blank' HREF='http://www.szwriter.com/bencandy.php?fid=18&id=2417' title='秦锦屏 | 新大众文艺的破局之作：《给阿嬷的情书》的“镜外之境' style='font-size:13px;'>秦锦屏 | 新大众文艺的破局之作：《给阿嬷的情书》..</A></div><div class='side_t' style='background:url(http://www.szwriter.com/images/default/flea_line.gif) repeat-x bottom;width:98%;padding-top:6px;padding-bottom:5px;'><A target='_blank' HREF='http://www.szwriter.com/bencandy.php?fid=18&id=2416' title='秦锦屏 |《奇迹》：时代浪潮中的命运交响' style='font-size:13px;'>秦锦屏 |《奇迹》：时代浪潮中的命运交响</A></div><div class='side_t' style='background:url(http://www.szwriter.com/images/default/flea_line.gif) repeat-x bottom;width:98%;padding-top:6px;padding-bottom:5px;'><A target='_blank' HREF='http://www.szwriter.com/bencandy.php?fid=17&id=2412' title='庆祝深圳市作家协会成立40周年，“深圳文学四十年（1984～2024）”研讨' style='font-size:13px;'>庆祝深圳市作家协会成立40周年，“深圳文学四十年..</A></div><div class='side_t' style='background:url(http://www.szwriter.com/images/default/flea_line.gif) repeat-x bottom;width:98%;padding-top:6px;padding-bottom:5px;'><A target='_blank' HREF='http://www.szwriter.com/bencandy.php?fid=18&id=2411' title='评马兴的诗集《敲门》 | 李犁' style='font-size:13px;'>评马兴的诗集《敲门》 | 李犁</A></div><div class='side_t' style='background:url(http://www.szwriter.com/images/default/flea_line.gif) repeat-x bottom;width:98%;padding-top:6px;padding-bottom:5px;'><A target='_blank' HREF='http://www.szwriter.com/bencandy.php?fid=18&id=2384' title='谢有顺 | 深圳散文藏着对城市的深情' style='font-size:13px;'>谢有顺 | 深圳散文藏着对城市的深情</A></div>
+
+          </td>
+        </tr>
+        <tr> 
+          <td class="foot"> 
+            <h3 class="L"></h3>
+            <h3 class="R"></h3>
+          </td>
+        </tr>
+      </table>
+      <table id="ListShowPic" width="100%" border="0" cellspacing="0" cellpadding="0" class="dragTable">
+        <tr> 
+          <td class="head"> 
+            <h3 class="L"></h3>
+            <span class="TAG">图片主题</span> 
+            <h3 class="R"></h3>
+          </td>
+        </tr>
+        <tr> 
+          <td class="middle" align="left"> 
+
+<div class='p' style='float:left;width:130px;padding-left:5px;padding-top:5px;'>  <a href='http://www.szwriter.com/bencandy.php?fid=18&id=2417' style='display:block;width:120px;height:90px;border:1px solid #ccc;' target='_blank'><img style='border:2px solid #fff;' width='120' height='90' src='http://www.szwriter.com/upload_files/article//92_20260602210642_hchdg.jpg' border='0'></a>  <A HREF='http://www.szwriter.com/bencandy.php?fid=18&id=2417' title='秦锦屏 | 新大众文艺的破局之作：《给阿嬷的情书》的“镜外之境' target='_blank'>秦锦屏 | 新大众文艺..</A>  </div><div class='p' style='float:left;width:130px;padding-left:5px;padding-top:5px;'>  <a href='http://www.szwriter.com/bencandy.php?fid=18&id=2416' style='display:block;width:120px;height:90px;border:1px solid #ccc;' target='_blank'><img style='border:2px solid #fff;' width='120' height='90' src='http://www.szwriter.com/upload_files/article//92_20260215120242_7wivt.jpg' border='0'></a>  <A HREF='http://www.szwriter.com/bencandy.php?fid=18&id=2416' title='秦锦屏 |《奇迹》：时代浪潮中的命运交响' target='_blank'>秦锦屏 |《奇迹》：..</A>  </div><div class='p' style='float:left;width:130px;padding-left:5px;padding-top:5px;'>  <a href='http://www.szwriter.com/bencandy.php?fid=17&id=2412' style='display:block;width:120px;height:90px;border:1px solid #ccc;' target='_blank'><img style='border:2px solid #fff;' width='120' height='90' src='http://www.szwriter.com/upload_files/article//92_20241113111141_zxrf2.jpg' border='0'></a>  <A HREF='http://www.szwriter.com/bencandy.php?fid=17&id=2412' title='庆祝深圳市作家协会成立40周年，“深圳文学四十年（1984～2024）”研讨' target='_blank'>庆祝深圳市作家协会..</A>  </div><div class='p' style='float:left;width:130px;padding-left:5px;padding-top:5px;'>  <a href='http://www.szwriter.com/bencandy.php?fid=18&id=2411' style='display:block;width:120px;height:90px;border:1px solid #ccc;' target='_blank'><img style='border:2px solid #fff;' width='120' height='90' src='http://www.szwriter.com/upload_files/article//92_20240611170607_6xnjl.jpg' border='0'></a>  <A HREF='http://www.szwriter.com/bencandy.php?fid=18&id=2411' title='评马兴的诗集《敲门》 | 李犁' target='_blank'>评马兴的诗集《敲门..</A>  </div>
+
+
+          </td>
+        </tr>
+        <tr> 
+          <td class="foot"> 
+            <h3 class="L"></h3>
+            <h3 class="R"></h3>
+          </td>
+        </tr>
+      </table>
+      <table width="100%" border="0" cellspacing="0" cellpadding="0" class="dragTable">
+        <tr> 
+          <td class="head"> 
+            <h3 class="L"></h3>
+            <span class="TAG">热门文章</span> 
+            <h3 class="R"></h3>
+          </td>
+        </tr>
+        <tr> 
+          <td class="middle" align="left"> 
+
+<div class='side_t' style='background:url(http://www.szwriter.com/images/default/flea_line.gif) repeat-x bottom;width:98%;padding-top:6px;padding-bottom:5px;'><A target='_blank' HREF='http://www.szwriter.com/bencandy.php?fid=17&id=2356' title='深圳市作家协会关于征集第八批深圳重点文学扶持作品的通知' style='font-size:13px;'>深圳市作家协会关于征集第八批深圳重点文学扶持作..</A></div><div class='side_t' style='background:url(http://www.szwriter.com/images/default/flea_line.gif) repeat-x bottom;width:98%;padding-top:6px;padding-bottom:5px;'><A target='_blank' HREF='http://www.szwriter.com/bencandy.php?fid=17&id=2361' title='关于开展第三届大湾区杯（深圳）网络文学大赛征文活动的通知' style='font-size:13px;'>关于开展第三届大湾区杯（深圳）网络文学大赛征文..</A></div><div class='side_t' style='background:url(http://www.szwriter.com/images/default/flea_line.gif) repeat-x bottom;width:98%;padding-top:6px;padding-bottom:5px;'><A target='_blank' HREF='http://www.szwriter.com/bencandy.php?fid=18&id=2276' title='深读诗会 | 第七期 | 主题诗人黄灿然 | 不朽事物的微光' style='font-size:13px;'>深读诗会 | 第七期 | 主题诗人黄灿然 | 不朽事物的..</A></div><div class='side_t' style='background:url(http://www.szwriter.com/images/default/flea_line.gif) repeat-x bottom;width:98%;padding-top:6px;padding-bottom:5px;'><A target='_blank' HREF='http://www.szwriter.com/bencandy.php?fid=17&id=2367' title='深圳市作家协会2021年新会员名单公示' style='font-size:13px;'>深圳市作家协会2021年新会员名单公示</A></div><div class='side_t' style='background:url(http://www.szwriter.com/images/default/flea_line.gif) repeat-x bottom;width:98%;padding-top:6px;padding-bottom:5px;'><A target='_blank' HREF='http://www.szwriter.com/bencandy.php?fid=17&id=2179' title='加油！首届深圳市青少年文学创作大赛征稿' style='font-size:13px;'>加油！首届深圳市青少年文学创作大赛征稿</A></div>
+
+          </td>
+        </tr>
+        <tr> 
+          <td class="foot"> 
+            <h3 class="L"></h3>
+            <h3 class="R"></h3>
+          </td>
+        </tr>
+      </table>
+      <table width="100%" border="0" cellspacing="0" cellpadding="0" class="dragTable">
+        <tr> 
+          <td class="head"> 
+            <h3 class="L"></h3>
+            <span class="TAG">推荐文章</span> 
+            <h3 class="R"></h3>
+          </td>
+        </tr>
+        <tr> 
+          <td class="middle" align="left"> 
+
+<div class='side_t' style='background:url(http://www.szwriter.com/images/default/flea_line.gif) repeat-x bottom;width:98%;padding-top:6px;padding-bottom:5px;'><A target='_blank' HREF='http://www.szwriter.com/bencandy.php?fid=18&id=2417' title='秦锦屏 | 新大众文艺的破局之作：《给阿嬷的情书》的“镜外之境' style='font-size:13px;'>秦锦屏 | 新大众文艺的破局之作：《给阿嬷的情书》..</A></div><div class='side_t' style='background:url(http://www.szwriter.com/images/default/flea_line.gif) repeat-x bottom;width:98%;padding-top:6px;padding-bottom:5px;'><A target='_blank' HREF='http://www.szwriter.com/bencandy.php?fid=18&id=2416' title='秦锦屏 |《奇迹》：时代浪潮中的命运交响' style='font-size:13px;'>秦锦屏 |《奇迹》：时代浪潮中的命运交响</A></div><div class='side_t' style='background:url(http://www.szwriter.com/images/default/flea_line.gif) repeat-x bottom;width:98%;padding-top:6px;padding-bottom:5px;'><A target='_blank' HREF='http://www.szwriter.com/bencandy.php?fid=17&id=2412' title='庆祝深圳市作家协会成立40周年，“深圳文学四十年（1984～2024）”研讨' style='font-size:13px;'>庆祝深圳市作家协会成立40周年，“深圳文学四十年..</A></div><div class='side_t' style='background:url(http://www.szwriter.com/images/default/flea_line.gif) repeat-x bottom;width:98%;padding-top:6px;padding-bottom:5px;'><A target='_blank' HREF='http://www.szwriter.com/bencandy.php?fid=18&id=2411' title='评马兴的诗集《敲门》 | 李犁' style='font-size:13px;'>评马兴的诗集《敲门》 | 李犁</A></div><div class='side_t' style='background:url(http://www.szwriter.com/images/default/flea_line.gif) repeat-x bottom;width:98%;padding-top:6px;padding-bottom:5px;'><A target='_blank' HREF='http://www.szwriter.com/bencandy.php?fid=18&id=2384' title='谢有顺 | 深圳散文藏着对城市的深情' style='font-size:13px;'>谢有顺 | 深圳散文藏着对城市的深情</A></div>
+
+          </td>
+        </tr>
+        <tr> 
+          <td class="foot"> 
+            <h3 class="L"></h3>
+            <h3 class="R"></h3>
+          </td>
+        </tr>
+      </table>
+      <table width="100%" border="0" cellspacing="0" cellpadding="0" class="dragTable">
+        <tr> 
+          <td class="head"> 
+            <h3 class="L"></h3>
+            <span class="TAG">相关文章</span> 
+            <h3 class="R"></h3>
+          </td>
+        </tr>
+        <tr> 
+          <td class="middle" align="left"> 
+
+
+<div class='side_t' style='background:url(http://www.szwriter.com/images/default/flea_line.gif) repeat-x bottom;width:98%;padding-top:6px;padding-bottom:5px;'><A target='_blank' HREF='http://www.szwriter.com/bencandy.php?fid=17&id=2367' title='深圳市作家协会2021年新会员名单公示' style='font-size:13px;'>深圳市作家协会2021年新会员名单公示</A></div><div class='side_t' style='background:url(http://www.szwriter.com/images/default/flea_line.gif) repeat-x bottom;width:98%;padding-top:6px;padding-bottom:5px;'><A target='_blank' HREF='http://www.szwriter.com/bencandy.php?fid=17&id=2324' title='深圳市作家协会2020年新会员公告' style='font-size:13px;'>深圳市作家协会2020年新会员公告</A></div><div class='side_t' style='background:url(http://www.szwriter.com/images/default/flea_line.gif) repeat-x bottom;width:98%;padding-top:6px;padding-bottom:5px;'><A target='_blank' HREF='http://www.szwriter.com/bencandy.php?fid=17&id=2179' title='加油！首届深圳市青少年文学创作大赛征稿' style='font-size:13px;'>加油！首届深圳市青少年文学创作大赛征稿</A></div><div class='side_t' style='background:url(http://www.szwriter.com/images/default/flea_line.gif) repeat-x bottom;width:98%;padding-top:6px;padding-bottom:5px;'><A target='_blank' HREF='http://www.szwriter.com/bencandy.php?fid=17&id=2034' title='关于征集2015年度中国作家协会少数民族文学重点作品扶持选题的通知' style='font-size:13px;'>关于征集2015年度中国作家协会少数民族文学重点作..</A></div><div class='side_t' style='background:url(http://www.szwriter.com/images/default/flea_line.gif) repeat-x bottom;width:98%;padding-top:6px;padding-bottom:5px;'><A target='_blank' HREF='http://www.szwriter.com/bencandy.php?fid=17&id=2032' title='2015年度中国作家协会所属单位招聘公告' style='font-size:13px;'>2015年度中国作家协会所属单位招聘公告</A></div>
+
+
+
+          </td>
+        </tr>
+        <tr> 
+          <td class="foot"> 
+            <h3 class="L"></h3>
+            <h3 class="R"></h3>
+          </td>
+        </tr>
+      </table>
+      <!-- <table width="100%" border="0" cellspacing="0" cellpadding="0" class="dragTable">
+        <tr> 
+          <td class="head"> 
+            <h3 class="L"></h3>
+            <span class="TAG"></span> 
+            <h3 class="R"></h3>
+          </td>
+        </tr>
+        <tr> 
+          <td class="middle" valign="top" align="left"> <SCRIPT LANGUAGE='JavaScript' src='http://www.szwriter.com/do/a_d_s.php?job=js&ad_id=article_show'></SCRIPT> 
+          </td>
+        </tr>
+        <tr> 
+          <td class="foot"> 
+            <h3 class="L"></h3>
+            <h3 class="R"></h3>
+          </td>
+        </tr>
+      </table> -->
+	  </div>
+    </div>
+<div class="cleardiv"></div>
+
+<!--
+-->
+<SCRIPT LANGUAGE="JavaScript">
+<!--//
+document.write('</div>');
+//-->
+</SCRIPT>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+clickEdit.init();
+//-->
+</SCRIPT>
+<div id="copy100">
+<div id="copyright">
+     <p><a href="/list.php?fid=1" target="blank">作协简介</a> | <a href="/list.php?fid=3" target="blank">文学院馆</a> | <a href="/list.php?fid=68" target="blank">文学奖项</a> | <a href="/list.php?fid=69" target="blank">理论研讨</a> | <a href="/list.php?fid=77" target="blank">文坛纵横</a> | <a href="/list.php?fid=66" target="blank">联系我们</a> </p>
+    Copyright@http://www.szwriter.com all rights reserved <a href="http://www.miibeian.gov.cn" target="_blank"></a><br />
+    Powered by <a href="http://www.szwriter.com" target="_blank">SZWRITER.COM</a> 
+    Code &copy; 2006-2026<a href="http://www.szwriter.com/" target="_blank">深圳作协</a>版权所有：深圳市作家协会 | 技术支持：<a target="_blank" href="http://www.dasj.net">DASJ</a><br />
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,1 @@
+No Content: http://www.szwriter.com/js/language.js

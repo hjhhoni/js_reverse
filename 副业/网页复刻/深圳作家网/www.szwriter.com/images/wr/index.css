@@ -1,0 +1,775 @@
+/* CSS Document */
+
+body,
+ul,
+p,
+dl,
+dd,
+form,
+input,
+area,
+textarea,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+select,
+    {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    border: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+body {
+    margin: auto;
+}
+
+.l {
+    float: left;
+}
+
+.r {
+    float: right;
+}
+
+.cle {
+    clear: both;
+}
+
+.bt10 {
+    margin-bottom: 10px;
+}
+
+.pd5 {
+    padding: 5px;
+}
+
+.pd10 {
+    padding: 10px;
+}
+
+.bar100 {
+    width: 100%;
+    margin: auto;
+    background: #FFDCB9;
+}
+
+/*
+涓棿涓讳綋  绗�1鏍�
+*/
+
+.main {
+    width: 990px;
+    margin: 0 auto;
+}
+
+.main1 {
+    width: 990px;
+    margin: 10px auto;
+}
+
+.main1 #box726 {
+    width: 726px;
+    height: 416px;
+    border: 2px solid #f00;
+    background: #fff;
+    float: left;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.main1 #box726 #info_1 {
+    width: 360px;
+    float: left;
+    background: url("bg_2.png") top center no-repeat;
+}
+
+.main1 #box726 #mid_1 {
+    width: 300px;
+    height: 270px;
+    background: #fff;
+    border: 8px solid #ccc;
+    margin: 20px 10px 0 10px;
+}
+
+.main1 #box726 #mid_2 {
+    width: 316px;
+    margin: 5px 10px 0 10px;
+}
+
+.main1 .side {
+    width: 250px;
+    height: 420px;
+    background: #fff;
+    float: right;
+    overflow: hidden;
+}
+
+.main1 .side h3 {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background: #ccc;
+    font-family: "Microsoft Yahei";
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.main1 .side h3 a {
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.main1 .side h3 a:link {
+    color: #333;
+}
+
+.main1 .side h3 a:visited {
+    color: #000;
+}
+
+.main1 .side h3 a:hover {
+    color: #f00;
+}
+
+.main1 .side h3 a:active {
+    color: #000;
+}
+
+/*
+涓讳綋  绗�2,3鏍�
+*/
+
+.wapall {
+    width: 990px;
+    margin: 10px auto;
+    height: 360px;
+    background: #fff;
+}
+
+.wapall h3 {
+    width: 100%;
+    height: 32px;
+    line-height: 32px;
+    font-family: "Microsoft Yahei";
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 14px;
+}
+
+/*
+涓讳綋  绗�4,5,鏍�  鏂囧潧绾垫í 鐞嗚鐮旂┒
+*/
+
+.main .mainl {
+    width: 730px;
+    float: left;
+    height: 540px;
+    overflow: hidden;
+    background: #fff;
+}
+
+.main .mainl430 {
+    width: 730px;
+    float: left;
+    height: 170px;
+    background: #fff;
+}
+
+.main .mainl h3,
+.main .mainl430 h3 {
+    width: 730px;
+    height: 36px;
+    line-height: 36px;
+    text-align: left;
+    color: #333;
+    margin-bottom: 14px;
+}
+
+.main .mainl430 ul {
+    padding: 0 10px;
+}
+
+.main .mainl430 ul li {
+    width: 60px;
+    height: 24px;
+    float: left;
+    display: inline;
+    margin-right: 4px;
+    margin-bottom: 12px;
+    border-bottom: 1px dotted #ccc;
+    text-align: center;
+}
+
+.main .mainl430 ul li a {
+    width: 60px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    text-decoration: none;
+    font-family: "Microsoft Yahei";
+    font-size: 14px;
+}
+
+.main .mainl430 ul li a:link {
+    color: #333;
+}
+
+.main .mainl430 ul li a:hover {
+    color: #f00;
+    background: #ebebeb;
+}
+
+.wapall h3 a,
+.main .mainl h3 a,
+.main .mainl430 h3 a {
+    display: block;
+    width: 130px;
+    height: 32px;
+    border-top: 4px solid #f00;
+    font-size: 22px;
+    font-family: "Microsoft Yahei";
+    line-height: 32px;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.wapall h3 a:link,
+.main .mainl h3 a:link,
+.main .mainl430 h3 a:link {
+    color: #333;
+}
+
+.wapall h3 a:visited,
+.main .mainl h3 a:visited,
+.main .mainl430 h3 a:visited {
+    color: #000;
+}
+
+.wapall h3 a:hover,
+.main .mainl h3 a:hover,
+.main .mainl430 h3 a:hover {
+    color: #f00;
+}
+
+.wapall h3 a:active,
+.main .mainl h3 a:active,
+.main .mainl430 h3 a:active {
+    color: #000;
+}
+
+.wapall .lf {
+    float: left;
+    width: 250px;
+    background: #fff;
+}
+
+.wapall .ri {
+    float: right;
+    width: 250px;
+    height: 320px;
+    background: #fff;
+}
+
+.wapall .ri .tt {
+    width: 250px;
+    height: 30px;
+    background: #ccc;
+    font-size: 18px;
+    font-family: "Microsoft Yahei";
+    font-weight: bold;
+    color: #333;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.wapall .ri .ri_cont {
+    height: 270px;
+}
+
+.wapall .lf,
+.wapall .mi,
+.main .mainl .lf,
+.main .mainl .mi {
+    width: 356px;
+    background: #fff;
+    float: left;
+    margin-left: 6px;
+}
+
+.wapall .lf .tt,
+.wapall .mi .tt,
+.main .lf .tt,
+.main .mi .tt {
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    background: #ccc;
+    line-height: 30px;
+    font-size: 16px;
+    color: #f00;
+}
+
+.wapall .lf .tt a,
+.wapall .mi .tt a,
+.main .lf .tt a,
+.main .mi .tt a {
+    width: 76px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 16px;
+    font-family: "Microsoft Yahei";
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.wapall .lf .tt a:link,
+.wapall .mi .tt a:link,
+.main .lf .tt a:link,
+.main .mi .tt a:link {
+    color: #f00;
+}
+
+.wapall .lf .tt a:hover,
+.wapall .mi .tt a:hover,
+.main .lf .tt a:hover,
+.main .mi .tt a:hover {
+    color: #333;
+}
+
+/*last 鏍�*/
+
+.main .mainr430 {
+    float: right;
+    width: 250px;
+    height: 170px;
+    background: #fff;
+    font-family: "Microsoft Yahei";
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    line-height: 30px;
+    text-align: center;
+}
+
+.main .mainr {
+    float: right;
+    width: 250px;
+    height: 540px;
+    background: #fff;
+    overflow: hidden;
+}
+
+.main .mainr .tt,
+.main .mainr430 .tt {
+    width: 250px;
+    height: 30px;
+    background: #ccc;
+    text-align: center;
+}
+
+.main .mainr .tt a {
+    font-family: "Microsoft Yahei";
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    line-height: 30px;
+    text-align: center;
+}
+
+.main .mainr .tt a:link {
+    color: #333;
+}
+
+.main .mainr .tt a:hover {
+    color: #f00;
+}
+
+.main .mainr430 .tt a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.main .mainr430 .tt a:link {
+    color: #298587;
+}
+
+.main .mainr430 .tt a:hover {
+    color: #73D8D7;
+}
+
+/*鍚勬爮鐩瓵閾炬帴宸﹁竟2\3澶ф爮鐩�*/
+
+.wapall h3 a {
+    text-decoration: none;
+    font-size: 22px;
+}
+
+.wapall h3 a:link {
+    color: #333;
+}
+
+.wapall h3 a:hover {
+    color: #f00;
+}
+
+/*
+ 鍚勬爮鐩� Tab 
+*/
+
+.wapall .lf .tabbox,
+.wapall .mi .tabbox,
+.main .mainl .lf .tabbox,
+.main .mainl .mi .tabbox {
+    width: 356px;
+    ;
+    float: left;
+}
+
+.wapall .lf .tabbox .tabmenu,
+.wapall .mi .tabbox .tabmenu,
+.main .mainl .lf .tabbox .tabmenu,
+.main .mainl .mi .tabbox .tabmenu {
+    width: 354px;
+    height: 28px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 12px;
+}
+
+.tabmenu ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.tabmenu li {
+    width: 76px;
+    height: 28px;
+    margin-right: 10px;
+    display: inline;
+    text-align: center;
+    float: left;
+    overflow: hidden;
+    background: #ccc;
+    line-height: 28px;
+}
+
+.tabmenu li a {
+    text-decoration: none;
+    font-family: "Microsoft Yahei";
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.tabmenu li a:link {
+    text-decoration: none;
+    font-family: "Microsoft Yahei";
+    font-size: 16px;
+    color: #f00;
+}
+
+.tabmenu li a:hover {
+    color: #333;
+}
+
+.tabmenu .cli {
+    text-align: center;
+    float: left;
+    width: 76px;
+    height: 28px;
+    overflow: hidden;
+    background: #ccc;
+    line-height: 28px;
+    display: inline;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#tabcontent {
+    width: 356px;
+    background: #fff;
+}
+
+#tabcontent ul {
+    margin: 0;
+    padding: 5px;
+    list-style-type: none;
+}
+
+#tabcontent .hidden {
+    display: none;
+}
+
+/*2鏍� 鍘熷垱閫熼€�--TAB*/
+
+#tabcontent2 {
+    width: 356px;
+    background-color: #fff;
+}
+
+#tabcontent2 ul {
+    margin: 0;
+    padding: 5px;
+    list-style-type: none;
+}
+
+#tabcontent2 .hidden {
+    display: none;
+}
+
+/*4鏍� 鏂囧潧绾垫í--TAB 鍙橀噺 4锛�5*/
+
+#tabcontent4 {
+    width: 356px;
+    background-color: #fff;
+}
+
+#tabcontent4 ul {
+    margin: 0;
+    padding: 5px;
+    list-style-type: none;
+}
+
+#tabcontent4 .hidden {
+    display: none;
+}
+
+#tabcontent5 {
+    width: 356px;
+    background-color: #fff;
+}
+
+#tabcontent5 ul {
+    margin: 0;
+    padding: 5px;
+    list-style-type: none;
+}
+
+#tabcontent5 .hidden {
+    display: none;
+}
+
+/*5鏍� 鐞嗚鐮旂┒--Tab 鍙橀噺 8,9*/
+
+#tabcontent8 {
+    width: 356px;
+    background-color: #fff;
+}
+
+#tabcontent8 ul {
+    margin: 0;
+    padding: 5px;
+    list-style-type: none;
+}
+
+#tabcontent8 .hidden {
+    display: none;
+}
+
+#tabcontent9 {
+    width: 356px;
+    background-color: #fff;
+}
+
+#tabcontent9 ul {
+    margin: 0;
+    padding: 5px;
+    list-style-type: none;
+}
+
+#tabcontent9 .hidden {
+    display: none;
+}
+
+/*鍙嬮摼*/
+
+.main .head1 {
+    height: 30px;
+    background: #ccc;
+    line-height: 28px;
+}
+
+.main .head1 .fr1 {
+    font-weight: bold;
+    font-size: 14px;
+    color: #f00;
+    width: 160px;
+    float: left;
+    padding-left: 20px;
+    border-left: 4px solid #999;
+}
+
+.main .head1 .fr2 {
+    font-size: 12px;
+    color: #333;
+    float: right;
+    padding-right: 10px;
+}
+
+.main .cont {
+    height: auto;
+    background: #fff;
+    padding: 10px;
+}
+
+.main .cont .word {
+    line-height: 26px;
+    font-size: 14px;
+    color: #333;
+}
+
+.main .cont .word a {
+    text-decoration: none;
+}
+
+.main .cont .word a:link {
+    color: #333;
+}
+
+.main .cont .word a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+    color: #f00;
+}
+
+/*棣栭〉涓� HUANDENG AD */
+
+a {
+    color: #000;
+}
+
+a:hover {
+    color: #f00;
+}
+
+div.wrapper {
+    width: 990px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.fn-clear {
+    zoom: 1;
+}
+
+.box_skitter {
+    position: relative;
+    background: none;
+}
+
+.box_skitter ul {
+    display: none;
+}
+
+.box_skitter .container_skitter {
+    overflow: hidden;
+    position: relative;
+}
+
+.box_skitter .image {
+    overflow: hidden;
+}
+
+.box_skitter .image img {
+    display: none;
+}
+
+.box_skitter .box_clone {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    overflow: hidden;
+    display: none;
+    z-index: 20;
+}
+
+.box_skitter .box_clone img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 20;
+}
+
+.box_skitter .prev_button {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    z-index: 100;
+    width: 28px;
+    height: 40px;
+    overflow: hidden;
+    text-indent: -9999em;
+    margin-top: -25px;
+    background: url("prev.png") no-repeat left top !important;
+}
+
+.box_skitter .next_button {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    z-index: 100;
+    width: 28px;
+    height: 40px;
+    overflow: hidden;
+    text-indent: -9999em;
+    margin-top: -25px;
+    background: url("next.png") no-repeat left top !important;
+}
+
+.box_skitter .label_skitter {
+    z-index: 150;
+    position: absolute;
+    display: none;
+}
+
+.loading {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    z-index: 10000;
+    margin: -16px -16px;
+    color: #fff;
+    text-indent: -9999em;
+    overflow: hidden;
+    background: url("ajax-loader.gif") no-repeat left top;
+    width: 31px;
+    height: 31px;
+}
+
+#slideshow {
+    width: 990px;
+    height: 120px;
+}
+
+#slideshow ul {
+    display: none;
+}
