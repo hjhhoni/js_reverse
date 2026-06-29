@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8" />
+        <title>CPU 线程调度模拟器 (16核 vs 30线程)</title>
+        <style>
+            body {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                background-color: #f4f6f9;
+                color: #333;
+                margin: 0;
+                padding: 20px;
+            }
+            .container {
+                max-width: 900px;
+                margin: 0 auto;
+                background: #fff;
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            }
+            h2 {
+                text-align: center;
+                color: #2c3e50;
+                margin-top: 0;
+            }
+            .controls {
+                display: flex;
+                justify-content: center;
+                gap: 15px;
+                margin-bottom: 20px;
+                align-items: center;
+            }
+            button,
+            select,
+            input {
+                padding: 8px 12px;
+                font-size: 14px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+            }
+            button {
+                background-color: #3498db;
+                color: #fff;
+                border: none;
+                cursor: pointer;
+                transition: 0.3s;
+            }
+            button:hover {
+                background-color: #2980b9;
+            }
+            .stats {
+                display: flex;
+                justify-content: space-around;
+                background: #ecf0f1;
+                padding: 10px;
+                border-radius: 6px;
+                margin-bottom: 20px;
+                font-weight: bold;
+            }
+
+            .section-title {
+                font-size: 16px;
+                margin-bottom: 10px;
+                font-weight: bold;
+                color: #7f8c8d;
+            }
+            .cpu-grid {
+                display: grid;
+                grid-template-columns: repeat(8, 1fr);
+                gap: 10px;
+                margin-bottom: 20px;
+            }
+            .core {
+                height: 60px;
+                background: #bdc3c7;
+                border-radius: 6px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 12px;
+                color: #fff;
+                font-weight: bold;
+                transition: background 0.1s;
+                border: 2px solid #95a5a6;
+            }
+            .core.active {
+                background: #2ecc71;
+                border-color: #27ae60;
+                box-shadow: 0 0 8px rgba(46, 204, 113, 0.6);
+            }
+
+            .queues {
+                display: flex;
+                gap: 20px;
+            }
+            .queue-box {
+                flex: 1;
+                background: #f8f9fa;
+                border: 1px dashed #bdc3c7;
+                border-radius: 6px;
+                padding: 10px;
+                min-height: 150px;
+            }
+            .thread-item {
+                display: inline-block;
+                width: 24px;
+                height: 24px;
+                border-radius: 50%;
+                background: #3498db;
+                color: #fff;
+                text-align: center;
+                line-height: 24px;
+                font-size: 12px;
+                margin: 3px;
+                font-weight: bold;
+            }
+            .thread-item.io-wait {
+                background: #e67e22;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h2>CPU 线程调度模拟器</h2>
+
+            <div class="controls">
+                <label
+                    >任务类型:
+                    <select id="taskType">
+                        <option value="io">爬虫程序 (I/O 密集型 - 等待网络)</option>
+                        <option value="cpu">数学计算 (CPU 密集型 - 持续计算)</option>
+                    </select>
+                </label>
+                <label
+                    >软件线程数:
+                    <input type="number" id="threadCount" value="30" min="1" max="100" style="width: 60px" />
+                </label>
+                <button id="startBtn">开始模拟</button>
+                <button id="stopBtn" style="background-color: #e74c3c">停止</button>
+            </div>
+
+            <div class="stats">
+                <div id="statActive">正在 CPU 中计算的线程: 0 / 16</div>
+                <div id="statQueue">排队等待 CPU 的线程: 0</div>
+                <div id="statIO">正在等网速的线程 (不占CPU): 0</div>
+            </div>
+
+            <div class="section-title">硬件线程 (16 个物理通道) - 绿色表示正在处理指令</div>
+            <div class="cpu-grid" id="cpuGrid"></div>
+
+            <div class="queues">
+                <div class="queue-box">
+                    <div class="section-title">就绪队列 (等待分配给 CPU)</div>
+                    <div id="readyQueue"></div>
+                </div>
+                <div class="queue-box">
+                    <div class="section-title">I/O 等待区 (等网速响应，完全不占用CPU)</div>
+                    <div id="ioQueue"></div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            const NUM_CORES = 16;
+            let threads = [];
+            let intervalId = null;
+            let tickSpeed = 100; // 毫秒
+
+            const cpuGrid = document.getElementById('cpuGrid');
+            const readyQueueDiv = document.getElementById('readyQueue');
+            const ioQueueDiv = document.getElementById('ioQueue');
+
+            // 初始化 16 个硬件核心的 UI
+            for (let i = 0; i < NUM_CORES; i++) {
+                const core = document.createElement('div');
+                core.className = 'core';
+                core.id = 'core-' + i;
+                core.innerText = '通道 ' + (i + 1);
+                cpuGrid.appendChild(core);
+            }
+
+            class Thread {
+                constructor(id, type) {
+                    this.id = id;
+                    this.type = type;
+                    this.state = 'ready'; // ready, running, io
+                    this.cpuTimeLeft = 0;
+                    this.ioTimeLeft = 0;
+                    this.resetTimers();
+                }
+
+                resetTimers() {
+                    if (this.type === 'io') {
+                        // 爬虫：CPU 处理极快 (1-2 帧)，等网速极慢 (20-40 帧)
+                        this.cpuTimeLeft = Math.floor(Math.random() * 2) + 1;
+                        this.ioTimeLeft = Math.floor(Math.random() * 20) + 20;
+                    } else {
+                        // 数学计算：死占着 CPU 不放 (30-60 帧)，完全不需要等网速
+                        this.cpuTimeLeft = Math.floor(Math.random() * 30) + 30;
+                        this.ioTimeLeft = 0;
+                    }
+                }
+            }
+
+            function initSimulation() {
+                clearInterval(intervalId);
+                threads = [];
+                const count = parseInt(document.getElementById('threadCount').value) || 30;
+                const type = document.getElementById('taskType').value;
+
+                for (let i = 0; i < count; i++) {
+                    threads.push(new Thread(i + 1, type));
+                }
+                updateUI();
+            }
+
+            function step() {
+                let activeCores = 0;
+                let waitingIO = 0;
+                let readyCount = 0;
+
+                // 1. 处理正在 CPU 中运行的线程
+                let runningThreads = threads.filter((t) => t.state === 'running');
+                runningThreads.forEach((t) => {
+                    t.cpuTimeLeft--;
+                    if (t.cpuTimeLeft <= 0) {
+                        if (t.type === 'io') {
+                            t.state = 'io'; // 爬虫发完请求，去等网速
+                        } else {
+                            t.resetTimers();
+                            t.state = 'ready'; // 计算型任务稍微释放一下，重新排队（时间片轮转）
+                        }
+                    }
+                });
+
+                // 2. 处理正在等网速的线程
+                let ioThreads = threads.filter((t) => t.state === 'io');
+                ioThreads.forEach((t) => {
+                    t.ioTimeLeft--;
+                    if (t.ioTimeLeft <= 0) {
+                        t.resetTimers();
+                        t.state = 'ready'; // 网速等到了，重新排队等 CPU 处理数据
+                    }
+                });
+
+                // 3. 调度就绪的线程进入空闲的 CPU 通道
+                let readyThreads = threads.filter((t) => t.state === 'ready');
+                runningThreads = threads.filter((t) => t.state === 'running');
+                let availableCores = NUM_CORES - runningThreads.length;
+
+                for (let i = 0; i < availableCores; i++) {
+                    if (readyThreads.length > 0) {
+                        let nextThread = readyThreads.shift();
+                        nextThread.state = 'running';
+                    }
+                }
+
+                updateUI();
+            }
+
+            function updateUI() {
+                let running = threads.filter((t) => t.state === 'running');
+                let ready = threads.filter((t) => t.state === 'ready');
+                let io = threads.filter((t) => t.state === 'io');
+
+                document.getElementById('statActive').innerText = `正在 CPU 中计算的线程: ${running.length} / 16`;
+                document.getElementById('statQueue').innerText = `排队等待 CPU 的线程: ${ready.length}`;
+                document.getElementById('statIO').innerText = `正在等网速的线程 (不占CPU): ${io.length}`;
+
+                // 更新核心 UI
+                for (let i = 0; i < NUM_CORES; i++) {
+                    let coreDiv = document.getElementById('core-' + i);
+                    if (i < running.length) {
+                        coreDiv.classList.add('active');
+                        coreDiv.innerText = `线程 ${running[i].id}`;
+                    } else {
+                        coreDiv.classList.remove('active');
+                        coreDiv.innerText = '空闲';
+                    }
+                }
+
+                // 更新队列 UI
+                readyQueueDiv.innerHTML = ready.map((t) => `<div class="thread-item">${t.id}</div>`).join('');
+                ioQueueDiv.innerHTML = io.map((t) => `<div class="thread-item io-wait">${t.id}</div>`).join('');
+            }
+
+            document.getElementById('startBtn').addEventListener('click', () => {
+                initSimulation();
+                intervalId = setInterval(step, tickSpeed);
+            });
+
+            document.getElementById('stopBtn').addEventListener('click', () => {
+                clearInterval(intervalId);
+            });
+
+            // 默认初始化
+            initSimulation();
+        </script>
+    </body>
+</html>
