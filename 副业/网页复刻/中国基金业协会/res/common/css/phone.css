@@ -1,0 +1,410 @@
+@charset "UTF-8";
+@media screen and (max-width: 1500px) {}
+
+@media screen and (max-width: 480px) {
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    input {
+        line-height: normal !important;
+    }
+    .mode-banner img {
+        max-width: 960px;
+    }
+    .index-banner .banner-cnt>img {
+        max-width: 100%;
+    }
+    .wrap-layer {
+        width: auto;
+    }
+    body,
+    html {
+        overflow-x: hidden;
+        min-width: 0;
+    }
+    .H25 {
+        height: 10px;
+    }
+    .H75 {
+        height: 20px;
+    }
+    .H50 {
+        height: 20px;
+    }
+    .bom-logo img {
+        width: 90px;
+        height: 90px;
+    }
+    .bom-logo-wrap {
+        top: -40px;
+    }
+    .footer>* {
+        padding: 0 10px;
+    }
+    .fot-r {
+        float: none;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .copys {
+        height: auto;
+        line-height: 180%;
+        text-align: center;
+        padding: 15px 0;
+    }
+    .copys>* {
+        display: inline;
+        float: none;
+    }
+    .copys span {
+        float: none;
+        display: inline;
+        margin-left: 10px;
+    }
+    .bom-contacts span {
+        display: block;
+        margin-right: 0;
+        font-size: 14px;
+        margin-top: 10px;
+    }
+    .mod-serroll .item-cell span {
+        min-width: 0;
+        font-size: 16px;
+    }
+    .mod-serroll {
+        padding: 0 30px;
+    }
+    .arrow-l2,
+    .arrow-r2 {
+        left: -30px;
+        background-size: 20px auto;
+    }
+    .arrow-r2 {
+        left: auto;
+        right: -30px;
+    }
+    .mod-finatotal {
+        max-height: none;
+        overflow: hidden;
+    }
+    #ChinaMap {
+        margin: 0 auto;
+    }
+    .map {
+        margin-top: 0;
+    }
+    .bom-nav {
+        margin-right: 0;
+        width: 100%;
+        padding: 0 10px 0 10px;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+    }
+    .bom-nav ul li {
+        display: inline-block;
+        white-space: nowrap;
+        margin-right: 10px;
+        margin-bottom: 5px;
+    }
+    .site-nav-inner {
+        margin-right: 0;
+    }
+    .com-tit2 span,
+    .com-tit3 span {
+        font-size: 24px;
+        padding-bottom: 14px;
+    }
+    .H125 {
+        height: 75px;
+    }
+    .page-body {
+        padding-bottom: 80px;
+    }
+    .mod-header {
+        padding: 10px;
+    }
+    .mod-header .left .logo-a img {
+        height: 25px;
+    }
+    .mod-header .left .sublogo {
+        height: 25px;
+        display: none;
+    }
+    .mod-header .right .website {
+        width: 80px;
+        height: 25px;
+        line-height: 25px;
+        font-size: 12px;
+        margin-top: 0;
+    }
+    .mode-banner .mode-inner img {
+        height: 150px;
+    }
+    .mode-banner .curmenu {
+        font-size: 20px;
+        padding-left: 10px;
+        width: auto;
+    }
+    .info-page .tips-body {
+        margin: 0;
+    }
+    .tips-body {
+        padding: 10px;
+    }
+    .tips-body .title .left {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .tips-body .title .left:before {
+        width: 20px;
+        height: 20px;
+        font-size: 12px;
+        top: 0;
+    }
+    .tips-body .title .right span {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .tips-body .title .right em {
+        top: 8px;
+    }
+    .tips-body-open .title .right em {
+        top: 0;
+    }
+    .info-body {
+        padding: 10px;
+    }
+    .info-body .common-tit {
+        padding: 10px;
+    }
+    .info-body .common-tit span {
+        font-size: 16px;
+    }
+    .table-response {
+        width: 100%;
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+    .info-body .table-response .table {
+        white-space: nowrap;
+        width: auto;
+    }
+    .info-body .table td.title {
+        min-width: 150px;
+        white-space: normal;
+    }
+    .info-body .table-response .table .list-table {
+        white-space: nowrap;
+        width: auto;
+    }
+    .public-type {
+        padding: 10px;
+    }
+    .public-type .layout-table td {
+        height: 80px;
+    }
+    .public-type .layout-table,
+    .public-type .layout-table>tbody>tr,
+    .public-type .layout-table>tbody>tr>td {
+        display: block;
+        border-spacing: 0;
+        height: auto;
+    }
+    .public-type .layout-table>tbody>tr>td {
+        margin-bottom: 15px;
+    }
+    .public-type .table-box:after,
+    .public-type .table-box:before {
+        left: 100px;
+    }
+    .public-type .css-table .title {
+        width: 100px;
+    }
+    .public-type .css-table .title img {
+        width: 25px;
+        height: auto;
+    }
+    .public-type .css-table .tit {
+        font-size: 14px;
+    }
+    .public-type .css-table .list {
+        padding: 10px;
+    }
+    .public-type .css-table .list ul li {
+        margin: 5px 0;
+    }
+    .public-type .css-table .list ul li a {
+        height: 30px;
+        line-height: 30px;
+        font-size: 13px;
+    }
+    .query-area {
+        margin: 0;
+        height: auto;
+        padding-top: 10px;
+    }
+    .query-area .tit {
+        float: none;
+        width: 100%;
+        padding-left: 10px;
+    }
+    .query-area .tit span {
+        font-size: 22px;
+    }
+    .query-area .form {
+        height: auto;
+        margin: 0;
+        position: relative;
+    }
+    .query-area .form-list {
+        margin: 0;
+        padding: 10px;
+    }
+    .query-area .form-list .time .title,
+    .query-area .form-list .organ .title {
+        line-height: 40px;
+        font-size: 14px;
+    }
+    .query-area .form-list .inp {
+        height: auto;
+        border-bottom-width: 1px;
+    }
+    .query-area .form-list .inp input {
+        height: 40px;
+    }
+    .query-area .register-area {
+        float: none;
+        border: none;
+        position: absolute;
+        right: 10px;
+        bottom: 100%;
+        height: auto;
+        width: auto;
+        padding: 5px 10px;
+    }
+    .query-area .register-area a {
+        font-size: 14px;
+    }
+    .query-area .register-area table {
+        width: auto;
+    }
+    .query-area .form-list .recently {
+        float: none;
+        overflow: hidden;
+    }
+    .query-area .form-list .recently li {
+        padding: 0;
+        margin: 0;
+        width: 33.3333%;
+        text-align: center;
+        line-height: 30px;
+        font-size: 14px;
+    }
+    .query-area .form-list .recently li:before {
+        display: none;
+    }
+    .query-area .form-list table,
+    .query-area .form-list table>tbody,
+    .query-area .form-list table>tbody>tr,
+    .query-area .form-list table>tbody>tr>td {
+        display: block;
+        border-spacing: 0;
+        height: auto;
+        width: 100%;
+    }
+    .query-area .form-list table>tbody>tr>td {
+        margin-bottom: 10px;
+    }
+    .query-area .form-list .organ {
+        overflow: hidden;
+    }
+    .query-area .form-list .organ .select {
+        overflow: hidden;
+        height: 40px;
+    }
+    .query-area .form-list .organ .select .multiple-input {
+        line-height: 40px;
+        font-size: 14px;
+    }
+    .query-area .form-list .organ .multiple-list-show {
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100%;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    .query-area .form-list .organ .multiple-list-show ul {
+        flex: 1;
+        max-height: 100%;
+    }
+    .query-area .form-list .organ .mod-select {
+        display: inline-block;
+        -webkit-appearance: none;
+        background: none;
+        height: 40px;
+        color: #fff;
+        font-size: 14px;
+    }
+    .query-area .form-list .btn-group .button a {
+        border: none;
+    }
+    .query-area .form-list .btn-group .button span {
+        height: 40px;
+        line-height: 36px;
+        font-size: 14px;
+    }
+    .table-list {
+        padding: 0 10px 10px 10px;
+    }
+    .table-list .list td {
+        text-align: left;
+        padding: 10px;
+    }
+    .table-list .list tbody td a {
+        margin: 0;
+        margin-right: 10px;
+    }
+    .table-list .table-response .list {
+        white-space: nowrap;
+        width: auto;
+    }
+    .page-page * {
+        font-size: 12px;
+    }
+    .page-page .mod-select {
+        height: 30px;
+        -webkit-appearance: none;
+        background-color: #f5f5f5;
+        padding: 0 10px;
+    }
+    .page-page .left {
+        float: none;
+        margin-bottom: 10px;
+    }
+    .page-page .right {
+        float: none;
+    }
+    .page-page ul.inline-block {
+        display: block;
+        white-space: nowrap;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    .page-page ul.inline-block .pre,
+    .page-page ul.inline-block .next {
+        margin: 0 5px;
+        width: 40px;
+    }
+    .page-page ul.inline-block .item {
+        width: 24px;
+    }
+}
+
+@media screen and (max-width: 375px) {}
+
+@media screen and (max-width: 360px) {}

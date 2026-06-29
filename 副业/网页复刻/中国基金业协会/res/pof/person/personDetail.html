@@ -1,0 +1,506 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+        <title>证书信息 - 中国证券投资基金业协会</title>
+        <link rel="stylesheet" type="text/css" href="../../lib/dataTable/css/jquery.dataTables.css" />
+        <link rel="stylesheet" type="text/css" href="../../lib/dataTable/css/fixedColumns.dataTables.css" />
+        <link rel="stylesheet" href="../../common/css/font.css" />
+        <link rel="stylesheet" href="../../common/css/reset.css" />
+        <link rel="stylesheet" href="../../common/css/common.css" />
+        <link rel="stylesheet" href="../../common/css/phone.css" />
+        <link rel="stylesheet" href="../../lib/laydate/theme/default/laydate.css" />
+        <link rel="stylesheet" href="../../common/css/common_self.css" />
+        <link rel="stylesheet" type="text/css" href="../../lib/jquery/plugins/artDialog4/skins/blue.css" />
+        <link rel="stylesheet" type="text/css" href="../../lib/jquery/plugins/jquery-ui-1.11.4/jquery-ui.css" />
+        <script src="../../common/js/jquery.min.js"></script>
+        <script src="../../common/js/jquery-migrate.min.js"></script>
+        <script type="text/javascript" language="javascript" src="../../common/js/common.js"></script>
+        <script type="text/javascript" language="javascript" src="../../common/js/jquery.select-1.3.6.js"></script>
+
+        <script type="text/javascript" language="javascript" src="../../lib/dataTable/js/jquery.dataTables.js"></script>
+        <script
+            type="text/javascript"
+            language="javascript"
+            src="../../lib/jquery/plugins/jquery-qrcode/jquery.qrcode.js"
+        ></script>
+        <script
+            type="text/javascript"
+            language="javascript"
+            src="../../lib/jquery/plugins/jquery-qrcode/qrcode.js"
+        ></script>
+        <script type="text/javascript" language="javascript" src="../../common/js/respond.min.js"></script>
+        <script type="text/javascript" language="javascript" src="../../common/js/watermark.js"></script>
+
+        <style type="text/css">
+            .w150 {
+                width: 150px;
+            }
+
+            .a1 {
+                color: #173bf4;
+            }
+
+            #qrcode {
+                width: 90px;
+                height: 90px;
+                margin: 0 auto;
+            }
+
+            #qrcode table tr td {
+                padding: 1px;
+                border-bottom: none;
+            }
+            }
+        </style>
+        <script type="text/javascript">
+            function getQueryString(name) {
+                var reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)', 'i');
+                var r = window.location.search.substr(1).match(reg);
+                if (r != null) return unescape(r[2]);
+                return null;
+            }
+
+            function closeW() {
+                var browserName = navigator.appName;
+                if (browserName == 'Netscape') {
+                    window.open('', '_self', '');
+                    window.close();
+                }
+                if (browserName == 'Microsoft Internet Explorer') {
+                    window.opener = null;
+                    window.open('', '_self');
+                    window.parent.close();
+                }
+            }
+
+            function formatDate2Str(time) {
+                var str = '';
+                if (!time) {
+                    return '';
+                }
+                var date = new Date(time);
+                if (parseInt(date.getMonth() + 1) < 10) {
+                    str = date.getFullYear() + '-0' + parseInt(date.getMonth() + 1);
+                } else {
+                    str = date.getFullYear() + '-' + parseInt(date.getMonth() + 1);
+                }
+                if (parseInt(date.getDate()) < 10) {
+                    str += '-0' + date.getDate();
+                } else {
+                    str += '-' + date.getDate();
+                }
+                return str;
+            }
+
+            function loadDataTable(certHisData) {
+                $('#certHisList').dataTable({
+                    bPaginate: false,
+                    sPaginationType: 'ellipses',
+                    bLengthChange: true,
+                    bFilter: false,
+                    bInfo: true,
+                    ordering: false,
+                    bAutoWidth: false,
+                    bProcessing: false,
+                    sDom: '<"top">t<"bottom"ilp>',
+                    oLanguage: {
+                        sZeroRecords: '没有相关记录',
+                        sInfoEmpty: '',
+                        sInfo: '',
+                    },
+                    bServerSide: false,
+                    data: certHisData,
+                    aoColumns: [
+                        {
+                            mDataProp: 'certCode',
+                            sClass: 'center',
+                            bSearchable: false,
+                            bSortable: false,
+                        },
+                        {
+                            mDataProp: 'creationDate',
+                            sClass: 'center',
+                            render: function (data) {
+                                return formatDate2Str(data);
+                            },
+                        },
+                        {
+                            mDataProp: 'orgName',
+                            sClass: 'center',
+                        },
+                        {
+                            mDataProp: 'certName',
+                            sClass: 'center',
+                        },
+                        {
+                            mDataProp: 'statusName',
+                            sClass: 'center',
+                        },
+                    ],
+                });
+            }
+
+            $(function () {
+                //如果是IE6和7
+                if (!+'\v1' && !'1'[0]) {
+                    $('#qrcode').closest('td').hide();
+                    $('#IE67').show();
+                    $('#otherBrowser').hide();
+                } else {
+                    $('#qrcode').qrcode({
+                        render: 'table',
+                        text: window.location.href,
+                        width: 50,
+                        height: 50,
+                    });
+                    $('#IE67').hide();
+                    $('#otherBrowser').show();
+                }
+
+                $.ajax({
+                    type: 'get',
+                    url: '/amac-infodisc/api/pof/person/' + getQueryString('accountId') + '?rand=' + Math.random(),
+                    dataType: 'json',
+                    success: function (data) {
+                        var json = data;
+                        if (json.flag == 0) {
+                            $('#personException').append(
+                                '<div class="mess">根据中基协字{2018}437号文《关于加强基金从业人员后续职业培训管理的通知》,该人员2019年度未按要求完成后续职业培训学时，完成后提示将自动撤销。</div>'
+                            );
+                        }
+                        $('#userName').text(json.userName ? json.userName : '');
+                        $('#sex').text(json.sex ? json.sex : '');
+                        $('#orgName').text(json.orgName ? json.orgName : '');
+                        $('#certCode').text(json.certCode ? json.certCode : '');
+                        $('#certName').text(json.certName ? json.certName : '');
+                        $('#statusName').text(json.statusName ? json.statusName : '');
+                        $('#educationName').text(json.educationName ? json.educationName : '');
+                        $('#certObtainDate').text(json.certObtainDate ? formatDate2Str(json.certObtainDate) : '');
+                        // $("#certEndDate").text(json.certEndDate?formatDate2Str(json.certEndDate):'');
+                        $.each(data.personCertHistoryList, function (i, item) {
+                            item.no = i + 1;
+                        });
+                        $('#personPhotoBase64').attr('src', json.personPhotoBase64 ? json.personPhotoBase64 : '');
+                        loadDataTable(data.personCertHistoryList);
+                    },
+                });
+                if (window.navigator.userAgent.indexOf('Firefox') != -1) {
+                    $('#close').hide();
+                }
+            });
+
+            var waterDate = new Date();
+            var waterText =
+                '基金业协会信息公示' +
+                '  ' +
+                waterDate.getFullYear() +
+                '-' +
+                (waterDate.getMonth() + 1) +
+                '-' +
+                waterDate.getDate();
+            window.onload = function () {
+                watermark({
+                    watermark_txt: waterText,
+                });
+            };
+            window.onresize = function () {
+                watermark({
+                    watermark_txt: waterText,
+                });
+            };
+        </script>
+    </head>
+
+    <body>
+        <div id="app-main-div">
+            <div class="mod-header">
+                <div class="wrap-layer">
+                    <div class="left">
+                        <a href="http://www.amac.org.cn" class="logo-a">
+                            <img src="../../common/images/logo.png" />
+                        </a>
+                        <a href="http://gs.amac.org.cn">
+                            <img class="sublogo" src="../../common/images/sublogo.png" />
+                        </a>
+                    </div>
+                    <div class="right">
+                        <!-- <a href="/" class="website">返回主站</a> -->
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <div class="mode-banner">
+                <div class="mode-inner">
+                    <div class="banner-cnt">
+                        <img src="../../common/images/banner.jpg" />
+                    </div>
+                </div>
+                <div class="inner-wraper">
+                    <div class="mod-table">
+                        <div class="mod-td">
+                            <div class="curmenu">中国基金业协会信息公示</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="page-body info-page">
+                <div class="wrap-layer">
+                    <div class="tips-body" id="tipsbody">
+                        <div class="title">
+                            <!-- <div class="left">中国证券投资基金业协会提示</div> -->
+                            <div>
+                                <!-- <div class="right" onclick="toggleclick()"> -->
+                                <span class="close">&nbsp;</span>
+                                <span class="open">&nbsp;</span>
+                                <em></em>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="content">
+                            <!-- <p>公示信息均来源于中国证券投资基金业协会会员提供的信息，会员单位对提供材料的真实性、准确性、完整性承担所有相关法律责任。</p>
+						<p>中国证券投资基金业协会对会员公示信息不构成对会员投资管理能力、持续合规情况的认可，不作为基金资产安全的保证。投资者进行投资时须谨慎判断和识别风险。</p>
+						<p>若发现会员公示信息中存在任何虚假或不实内容，可将相关举报或投诉情况发送至邮箱：tousu@amac.org.cn，或邮寄至中国证券投资基金业协会（地址：北京市西城区金融大街20号交通银行大厦B座9层，邮编100033，请标明“法律部收”，详见协会官网 www.amac.org.cn“投资者教育”栏目中“投诉须知”）。</p> -->
+                        </div>
+                    </div>
+                    <div class="info-body">
+                        <div class="rule">
+                            <!-- <div class="tit c_b5151d">适用《上市公司创业投资基金股东减持股份的特别规定》</div>
+						<div class="table-response">
+							<table class="table">
+								<tbody>
+									<tr>
+										<td rowspan="2" style="width:35%;background-color:#f9f9f9;">机构诚信信息</td>
+										<td class="c_b5151d" style="width:95px;background-color:#f9f9f9;">失联机构</td>
+										<td>根据<a>《关于建立“失联(异常)”私募机构公示制度的通知》</a>，确认该机构处于失联(异常)状态</td>
+									</tr>
+									<tr>
+										<td class="c_b5151d" style="width:95px;background-color:#f9f9f9;">异常机构</td class="c_b5151d">
+										<td>异常原因： 未按要求进行产品更新或重大事项更新累计2次及以上<br/>未按要求按时提交经审计的年度财务报告 </td>
+									</tr>
+								</tbody>
+							</table>
+						</div> -->
+                        </div>
+
+                        <div class="section table-list">
+                            <div id="personException"></div>
+                            <div class="common-tit">
+                                <span>证书基本信息</span>
+                            </div>
+                            <div class="table-response">
+                                <table class="table">
+                                    <colgroup>
+                                        <col width="20%" />
+                                        <col width="25%" />
+                                        <col width="20%" />
+                                        <col width="20%" />
+                                        <col width="15%" />
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <td class="td-title">姓名</td>
+                                            <td class="td-content" id="userName">杨若望</td>
+                                            <td class="td-title">性别</td>
+                                            <td class="td-content" id="sex">男</td>
+                                            <td rowspan="4" colspan="2">
+                                                <img
+                                                    id="personPhotoBase64"
+                                                    style="width: 115px; height: 160px"
+                                                    src="https://human.amac.org.cn/gs/photo/2102071437194125.jpg"
+                                                />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="td-title">从业机构</td>
+                                            <td class="td-content" id="orgName">安徽国元基金管理有限公司</td>
+                                            <td class="td-title">证书编号</td>
+                                            <td class="td-content" id="certCode">A20210207000906</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="td-title">从业资格类别</td>
+                                            <td class="td-content" id="certName">基金从业资格</td>
+                                            <td class="td-title">证书状态</td>
+                                            <td class="td-content" id="statusName">正常</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="td-title">证书取得日期</td>
+                                            <td class="td-content" id="certObtainDate">2021-02-07</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="section">
+                            <div class="common-tit">
+                                <span>证书状态变更记录</span>
+                            </div>
+                            <div class="table-response">
+                                <table id="certHisList" class="table" style="text-align: center">
+                                    <thead>
+                                        <tr style="font-weight: bold">
+                                            <td style="width: 20%">证书编号</td>
+                                            <td style="width: 18%">变更日期</td>
+                                            <td style="width: 20%">从业机构</td>
+                                            <td style="width: 12%">从业资格类别</td>
+                                            <td style="width: 12%">证书状态</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>A20210207000906</td>
+                                            <td>2021-02-07</td>
+                                            <td>安徽国元基金管理有限公司</td>
+                                            <td>基金从业资格</td>
+                                            <td>正常</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <a onclick="closeW()" class="close-page"> 关闭 </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer">
+                <div class="wrap-layer">
+                    <div class="bom-logo-wrap">
+                        <div class="bom-logo">
+                            <a href="#"><img src="../../common/images/bom_logo.png" alt="" /></a>
+                        </div>
+                        <div class="fot-r">
+                            <!-- <div class="code-icon">
+							<div class="focus">
+								<span><img src="../../common/images/wx_ico1.png" alt=""></span>
+								<i><img src="../../common/images/mcode.jpg" alt=""></i>
+							</div>
+						</div> -->
+                            <!-- <div class="bom-links">
+							<div class="bom-linkstit">相关链接</div>
+							<ul>
+								<li><a href="#">中国证监会</a></li>
+								<li><a href="#">百度</a></li>
+								<li><a href="#">腾讯</a></li>
+							</ul>
+						</div> -->
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="clear"></div>
+
+                    <div class="bom-contacts">
+                        <span class="bom-tel">私募基金咨询热线：400-017-8200</span>
+                        <span class="bom-tel">基金从业人员管理咨询服务热线：021-61948893</span>
+                        <span class="bom-addr">北京市西城区金融大街20号交通银行大厦B座9层中国基金业协会 </span>
+                    </div>
+                    <div class="clear"></div>
+                    <!-- <div class="map-site"><span>网站地图</span></div> -->
+
+                    <div class="site-nav" style="display: none">
+                        <div class="site-nav-inner">
+                            <div class="bom-nav">
+                                <div class="bom-navtits"><a href="#">政策规则</a></div>
+                                <ul>
+                                    <li><a href="#">国家法律</a></li>
+                                    <li><a href="#">部门规章</a></li>
+                                    <li><a href="#">司法解释</a></li>
+                                    <li><a href="#">规范性文件</a></li>
+                                    <li><a href="#">行业规定</a></li>
+                                    <li><a href="#">自律规则</a></li>
+                                    <li><a href="#">公开征求意见</a></li>
+                                </ul>
+                            </div>
+                            <div class="bom-nav">
+                                <div class="bom-navtits"><a href="#">业务服务</a></div>
+                                <ul>
+                                    <li><a href="#">会员服务</a></li>
+                                    <li><a href="#">公募基金业务</a></li>
+                                    <li><a href="#">私募基金业务</a></li>
+                                    <li><a href="#">资管及ABS业务</a></li>
+                                    <li><a href="#">托管业务</a></li>
+                                    <li><a href="#">基金销售业务</a></li>
+                                    <li><a href="#">私募基金服务业务</a></li>
+                                    <li><a href="#">基金评价业务</a></li>
+                                    <li><a href="#">养老金业务</a></li>
+                                    <li><a href="#">从业人员管理</a></li>
+                                </ul>
+                            </div>
+                            <div class="bom-nav">
+                                <div class="bom-navtits"><a href="#">信息公示</a></div>
+                                <ul>
+                                    <li><a href="#">会员公示</a></li>
+                                    <li><a href="#">机构公示</a></li>
+                                    <li><a href="#">产品公示</a></li>
+                                    <li><a href="#">从业人员公示</a></li>
+                                </ul>
+                            </div>
+                            <div class="bom-nav">
+                                <div class="bom-navtits"><a href="#">研究与统计</a></div>
+                                <ul>
+                                    <li><a href="#">专题研究</a></li>
+                                    <li><a href="#">报告</a></li>
+                                    <li><a href="#">数据统计</a></li>
+                                    <li><a href="#">指数</a></li>
+                                    <li><a href="#">出版物</a></li>
+                                </ul>
+                            </div>
+                            <div class="bom-nav">
+                                <div class="bom-navtits"><a href="#">自律措施</a></div>
+                                <ul>
+                                    <li><a href="#">自律处分</a></li>
+                                    <li><a href="#">自律管理</a></li>
+                                    <li><a href="#">行业投诉</a></li>
+                                </ul>
+                            </div>
+                            <div class="bom-nav">
+                                <div class="bom-navtits"><a href="#">行业动态</a></div>
+                                <ul>
+                                    <li><a href="#">会员动态</a></li>
+                                    <li><a href="#">地协动态</a></li>
+                                    <li><a href="#">国内交流动态</a></li>
+                                    <li><a href="#">国际交流动态</a></li>
+                                    <li><a href="#">行业之声</a></li>
+                                </ul>
+                            </div>
+                            <div class="bom-nav">
+                                <div class="bom-navtits"><a href="#">关于协会</a></div>
+                                <ul>
+                                    <li><a href="#">协会介绍</a></li>
+                                    <li><a href="#">协会治理</a></li>
+                                    <li><a href="#">党的建设</a></li>
+                                    <li><a href="#">协会动态</a></li>
+                                    <li><a href="#">扶贫工作</a></li>
+                                    <li><a href="#">采购信息</a></li>
+                                    <li><a href="#">招聘信息</a></li>
+                                    <li><a href="#">廉政举报</a></li>
+                                    <li><a href="#">联系我们</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="mod-copy">
+                    <div class="wrap-layer">
+                        <div class="copys">
+                            <i>© 版权所有：中国证券投资基金业协会 京ICP备16045718号</i
+                            ><i id="clickCount" style="margin-left: 300px"></i><span>京公网安备 11010202007223号</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            function toggleclick() {
+                if ($('#tipsbody').hasClass('tips-body-open')) {
+                    $('#tipsbody').removeClass('tips-body-open');
+                } else {
+                    $('#tipsbody').addClass('tips-body-open');
+                }
+            }
+        </script>
+    </body>
+</html>

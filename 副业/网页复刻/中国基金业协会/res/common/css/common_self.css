@@ -1,0 +1,367 @@
+.table-list .list th {
+    border-right: 1px solid #eeeeee;
+    text-align: center;
+}
+
+.table-list .list thead th {
+    background-color: #eeeeee;
+    font-size: 16px;
+    font-weight: bold;
+    height: 70px;
+    color: #000;
+    border-right: 1px solid #fff;
+}
+
+table.dataTable thead th,
+table.dataTable thead td {
+    padding: 10px 18px;
+    border-bottom: unset;
+}
+
+.bottom {
+    font-size: 14px;
+    color: #999999;
+    line-height: 0;
+    margin-top: 20px;
+    font-size: 14px;
+    font-family: "微软雅黑";
+}
+
+.bottom select {
+    margin: 0 5px;
+    border: none;
+    background: #f5f5f5;
+    border-radius: 5%;
+    outline: none;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    color: #fff;
+    background-color: #b5151d !important;
+    background: unset;
+    border: none;
+    font-weight: bold;
+}
+
+table.dataTable.no-footer {
+    border-bottom: none !important;
+}
+
+.btn-go {
+    margin-left: 5px;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: unset;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    color: #333;
+    height: 45px;
+    padding: 8px 18px !important;
+    background: white;
+}
+
+.bottom input {
+    width: 57px !important;
+    height: 30px;
+    background-color: #f5f5f5;
+    border: none;
+    padding: 0;
+    margin: 0 5px;
+    text-align: center;
+}
+
+.bottom button:hover {
+    color: white;
+}
+
+.dropselectbox ul li:hover {
+    background: #eeeeee;
+    cursor: pointer;
+}
+
+.table thead th {
+    background-color: unset;
+    text-align: center;
+    border-right: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    border: none !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current,
+.dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+    color: #b5151d;
+    font-weight: bold;
+    border: none;
+    background-color: unset;
+    background: none;
+}
+
+.btn-go::after {
+    content: "跳转";
+}
+
+.btn-go:hover,
+.btn-go:focus {
+    background-color: #b5151d !important;
+}
+
+.bottom .left {
+    float: left;
+}
+
+.bottom .right {
+    float: right;
+}
+
+.dataTables_wrapper .dataTables_info {
+    clear: both;
+    float: left;
+    padding-top: 6px;
+    margin-right: 10px;
+    width: 210px;
+}
+
+.dataTables_length {
+    margin-left: 10px;
+    margin-top: 6px;
+}
+
+.dataTables_length select {
+    width: 70px !important;
+}
+
+.bottom .inline-block {
+    display: inline-block;
+    vertical-align: middle;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 5px;
+}
+
+.bottom .inline-block span {
+    color: #b5151d;
+}
+
+.bottom .total span {
+    padding: 0 5px;
+}
+
+.bottom ul.inline-block li {
+    display: inline-block;
+    vertical-align: middle;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin: 0 5px;
+}
+
+.bottom a {
+    color: #999999;
+    display: block;
+    cursor: pointer;
+}
+
+.bottom ul.inline-block {
+    font-size: 0;
+    line-height: 0;
+}
+
+.bottom ul.inline-block .item {
+    width: 30px;
+    text-align: center;
+}
+
+.bottom ul.inline-block a:hover,
+.bottom ul.inline-block .cr {
+    color: #b5151d;
+}
+
+.bottom ul.inline-block .pre,
+.bottom ul.inline-block .next {
+    margin: 0 10px;
+    width: 57px;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.bottom ul.inline-block .pre a,
+.bottom ul.inline-block .next a {
+    display: block;
+    font-family: serif;
+    font-weight: bold;
+    background-color: #eeeeee;
+}
+
+.bottom ul.inline-block .pre a:hover,
+.bottom ul.inline-block .next a:hover {
+    color: #fff;
+    background-color: #b5151d;
+}
+
+.bottom .num {
+    width: 70px;
+    background-color: #f5f5f5;
+    border: none;
+    padding: 0;
+    margin: 0 5px;
+    text-align: center;
+}
+
+.bottom .dropdown {
+    height: 30px;
+}
+
+.bottom .dropdown .dropselectbox {
+    height: 100%;
+}
+
+.bottom .mod-select {
+    width: 70px;
+}
+
+.bottom .dropdown .dropselectbox h4 {
+    line-height: 30px;
+    font-weight: normal;
+    background-color: #f5f5f5;
+    padding-left: 10px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.bottom .dropdown .dropselectbox h4:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 5px solid transparent;
+    border-top-color: #b5151d;
+    right: 10px;
+    top: 13px;
+}
+
+.bottom .dropdown .dropselectbox ul {
+    background-color: #f5f5f5;
+}
+
+.bottom .dropdown .dropselectbox ul li {
+    padding-left: 10px;
+    font-size: 12px;
+    line-height: 30px;
+}
+
+input.tipcolor,
+textarea.watermark {
+    color: #da8a8e !important;
+}
+
+.dataTables_paginate {
+    padding-top: 0px !important;
+}
+
+table.dataTable.no-footer {
+    border-bottom: 1px solid #eeeeee !important;
+}
+
+.bottom .dropdown .dropselectbox h4 {
+    line-height: 30px;
+    font-weight: normal;
+    background-color: #f5f5f5;
+    padding-left: 10px;
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+}
+
+.dataTables_wrapper .dataTables_length {
+    margin-left: 10px;
+    margin-top: 6px;
+}
+
+.dataTables_wrapper .dataTable td {
+    text-align: center;
+    border-right: 1px solid #eeeeee;
+}
+
+.dataTables_wrapper .dataTable td a {
+    margin: 0 0px !important;
+    text-align: center !important;
+}
+
+.query-area .form-list .organ .dropselectbox h4 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.query-area .form-list .organ.noneTitle .dropselectbox h4 {
+    width: 75% !important;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.query-area .form-list .organ .dropselectbox ul {
+    width: 105% !important;
+}
+
+.list-table td {
+    text-align: center;
+}
+
+.table a:hover {
+    color: #b5151d;
+    text-decoration: underline;
+}
+
+.table-list .list tbody td div {
+    display: block;
+    position: relative;
+}
+
+.table-list .list tbody td div.empty_star:after {
+    content: "☆";
+    color: #b5151d;
+    position: absolute;
+    left: 100%;
+}
+
+.layui-layer-detail {
+    width: 900px !important;
+    height: 600px !important;
+    max-width: 90%;
+}
+
+.layui-layer-detail .layui-layer-title {
+    background-color: #b6161e;
+    text-align: left;
+    vertical-align: middle;
+    padding: 0;
+    color: #fff;
+    font-size: 16px !important;
+    font-weight: bold;
+    padding: 5px 80px 5px 30px !important;
+}
+
+.detail {
+    width: 100%;
+    table-layout: fixed;
+}
+
+.detail tr {
+    height: 50px;
+}
+
+.detail td {
+    text-align: center !important;
+    border: 1px solid #eeeeee
+}
+
+.detail-title {
+    white-space: normal;
+    font-weight: bold;
+}
