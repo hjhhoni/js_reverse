@@ -10,8 +10,8 @@ from urllib.parse import quote
 
 BASE = "https://glints.com"
 # 关键词搜索（keyword 文本匹配 title+description，country 国家过滤）
-SEARCH_URL = BASE + "/{cc}/opportunities/jobs/explore?keyword={kw}&country={cc}&page={page}&pageSize=30"
-DETAIL_URL = BASE + "/{cc}/opportunities/jobs/{slug}/{job_id}"
+SEARCH_URL = BASE + "/{ccl}/opportunities/jobs/explore?keyword={kw}&country={cc}&page={page}&pageSize=30"
+DETAIL_URL = BASE + "/{ccl}/opportunities/jobs/{slug}/{job_id}"
 
 COUNTRIES = {
     "SG": "Singapore",
