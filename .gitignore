@@ -6,4 +6,6 @@ skill更新
 *.jadx
 *.class
 副业/副业.csv
-副业
+副业/*/自动化
+副业/*/*/data
+副业/*/data
